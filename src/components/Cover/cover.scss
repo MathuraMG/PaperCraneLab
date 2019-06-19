@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.cover {
+  &__container {
+    overflow: hidden;
+  }
+  &__image {
+    height: 80vh;
+    left: 40%;
+    transform: translate(-40%, 0);
+    opacity: 0.6;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cover {
+    &__image {
+      width: 100%;
+      height: auto;
+      transform: none;
+    }
+  }
+}

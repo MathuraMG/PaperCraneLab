@@ -1,69 +1,21 @@
 $white: #FFFFFF;
 $offwhite: #FBFBFB;
-$black: #00151E;
-$grey: #B2B8BB;
-$darkgrey: #292C33;
-$lightgrey: #F2F3F4;
-$green: #009887;
-$blue: #006A98;
-$yellow: #FFD111;
+$black: #333333;
+$darkgrey: #999999;
+$blue: #65beb7;
+$light-blue: #b0e1db;
 
-$border-yellow: #FFD111;
-$border-pink: #9A0077;
-$border-green: #47B471;
-$border-blue: #00699A;
-
-$tag-yellow: #FFF6CF;
-$tag-pink: #EACCE4;
-$tag-blue: #D1E7F0;
-$tag-green: #D7EEE0;
-
-$g1: #4ca097;
-$g2: #89bfb9;
-
-$r1: #e47161;
-$r2: #e99387;
-
-$b1: #87b7ca;
-$b2: #9fc6d4;
-
-$small-padding: 0.5rem;
-$medium-padding: 1rem;
-$large-padding: 1.5rem;
-
-$small-margin: 0.5rem;
-$medium-margin: 1rem;
-$large-margin: 1.5rem;
-
-$small-font: 12px;
-$small-line-height: 18px;
-$medium-font: 18px;
-$medium-line-height: 22px;
-$large-font: 24px;
-$large-line-height: 32px;
-$hero-heading-font-1: 42px;
-$hero-heading-font-2: 32px;
-$about-heading-1: 35px;
-$about-heading-2: 25px;
-$hero-heading-line-height: 51px;
-$hero-left-margin: 6%;
-$subheading-font: 35px;
-
-
+$line-thickness: 2px;
 $border-radius: 6px;
-$border: 2px;
 
-$button-width: 160px;
-$button-height: 40px;
-$nav-height: 65px;
-$pebl-image-size-width: 200px;
-$pebl-image-size-height: 150px;
-$pebl-collection-size-width: 200px;
-$pebl-collection-size-height: 250px;
-$pebl-margin: 25px;
+$h1-font-size: 22px;
+$h1-line-height: 32px;
+
+$p-font-size: 16px;
+$p-line-height: 22px;
 
 $primary-font: Roboto, sans-serif;
-$secondary-font: Oxygen, sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
 
 html {
   overflow-y: scroll;

@@ -1,7 +1,42 @@
 @import '../../styles/variables';
+@import '../../styles/base';
 
-.cover {
-  &__container {
-
+@media only screen and (min-width: 768px) {
+  .calendar {
+    &__sub-container {
+    }
   }
+}
+
+.day {
+  height: 50px;
+  width: 14.28%;
+  border: $line-thickness/2 solid $blue !important;
+}
+
+.days {
+  max-width: 100%;
+  height: fit-content;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  border: $line-thickness/2 solid $blue !important;
+  border-radius: $border-radius;
+}
+
+.day-label {
+  margin-right: 8px;
+  width: 14.28%;
+  overflow: hidden;
+  display: none !important;
+}
+
+.outside {
+  background-color: $light-blue !important;
+}
+
+.label {
+  color: $blue;
+  font-size: $p-font-size*0.8;
+  font-family: $primary-font;
+  font-weight: 800;
 }

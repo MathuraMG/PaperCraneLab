@@ -1,0 +1,61 @@
+@import './variables';
+
+.container-col{
+  flex-direction: column !important;
+}
+
+h1.heading {
+  color: $black;
+  font-size: $h1-font-size;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: $h1-line-height;
+  font-family: $primary-font;
+  margin: 0;
+}
+
+p.content {
+  font-family: $primary-font;
+  font-size: $p-font-size;
+  line-height: $p-line-height;
+  font-family: $secondary-font;
+}
+
+section.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-bottom: solid $line-thickness $darkgrey;
+}
+
+button.button {
+  height: 50px;
+  cursor: pointer;
+  border: $line-thickness solid $black;
+  border-radius: $border-radius;
+  color: $white;
+  background-color: $black;
+  font-size: $p-font-size*0.8;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  font-weight: 800;
+  &:hover {
+    border: $line-thickness solid $black;
+    color: $black;
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section.container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+  }
+  section.sub-container {
+    width: 45%;
+  }
+}

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Container from '@material-ui/core/Container';
 import cover from '../../assets/cover.png'
 
 require('./cover.scss');

@@ -1,10 +1,24 @@
 @import '../../styles/variables';
 @import '../../styles/base';
 
-@media only screen and (min-width: 768px) {
-  .calendar {
-    &__sub-container {
+.calendar {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    &-left {
+      align-items: flex-start;
     }
+  }
+  &__event-image {
+    max-width: 100%;
   }
 }
 
@@ -12,6 +26,34 @@
   height: 50px;
   width: 14.28%;
   border: $line-thickness/2 solid $blue !important;
+  position: relative;
+  .event {
+    fill: $darkgrey !important;
+    border: none !important;
+    height: 48px !important;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  .events {
+    width: 100% !important;
+    height: 50px !important;
+    margin: 0;
+  }
+  .evbody {
+    padding: 2px !important;
+    overflow: visible !important;
+    & > div {
+      overflow: visible !important;
+      font-size: $event-font-size;
+      display: flex !important;
+      height: 44px !important;
+      margin: 0;
+    }
+  }
+
+  .label {
+    position: absolute;
+  }
 }
 
 .days {
@@ -39,4 +81,23 @@
   font-size: $p-font-size*0.8;
   font-family: $primary-font;
   font-weight: 800;
+}
+
+@media only screen and (min-width: 768px) {
+  .calendar {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__container-big {
+      width: 55% !important;
+    }
+    &__container-small {
+      width: 40% !important;
+    }
+    &__sub-container {
+      width: 48%;
+    }
+  }
 }

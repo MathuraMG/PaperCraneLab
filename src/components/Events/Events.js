@@ -15,6 +15,12 @@ class Events extends Component {
         <ul className="events__list">
           <li className="events__list-item">
             <Event
+              eventHeading="Hobby Workshops and Meetups"
+              eventImg={event3}
+            />
+          </li>
+          <li className="events__list-item">
+            <Event
               eventHeading="Coorporate Workshops and Team Activities"
               eventImg={event1}
             />
@@ -23,12 +29,6 @@ class Events extends Component {
             <Event
               eventHeading="School Workshops and Classes"
               eventImg={event2}
-            />
-          </li>
-          <li className="events__list-item">
-            <Event
-              eventHeading="Hobby Workshops and Meetups"
-              eventImg={event3}
             />
           </li>
         </ul>

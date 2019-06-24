@@ -28,7 +28,7 @@ const EVENTS = new Dayz.EventsCollection([
       image: 'http://placecage.com/200/300',
       link: 'http://placecage.com/200/300'
     },
-   { content: 'Creative Coding Workshop',
+   { content: 'Creative Coding',
     timing: 'Sept 18 | 2:00pm - 5:00pm',
      range: moment.range( moment('2015-09-18').clone().hour(8),
      moment('2015-09-18').clone().hour(11) ),

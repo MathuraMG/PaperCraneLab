@@ -1,43 +1,11 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Dayz from 'dayz';
-// could also import the sass if you have a loader at dayz/dayz.scss
-// import 'dayz/dist/styles.css';
-import moment from 'moment';
 import Container from '@material-ui/core/Container';
+import {DATE, EVENTS} from '../../constants/eventList';
 
 require('dayz/dayz.scss');
 require('./calendar.scss');
-
-// would come from a network request in a "real" app
-const date = moment('2015-09-11');
-const EVENTS = new Dayz.EventsCollection([
-    { content: 'Three Hours',
-      timing: 'Sept 8 | 2:00pm - 5:00pm',
-      range: moment.range( moment('2015-09-08').clone().hour(8),
-      moment('2015-09-08').clone().hour(11) ),
-      details: 'Ask for petting pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now or attack',
-      image: 'https://placekitten.com/200/300',
-      link: 'https://placekitten.com/200/300'
-    },
-    { content: 'Two Hours ~ 8-10',
-      timing: 'Sept 11 | 2:00pm - 5:00pm',
-      range: moment.range( date.clone().hour(8),
-      date.clone().hour(10) ),
-      details: 'Ask for petting pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now or attack',
-      image: 'http://placecage.com/200/300',
-      link: 'http://placecage.com/200/300'
-    },
-   { content: 'Creative Coding',
-    timing: 'Sept 18 | 2:00pm - 5:00pm',
-     range: moment.range( moment('2015-09-18').clone().hour(8),
-     moment('2015-09-18').clone().hour(11) ),
-     details: 'Ask for petting pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now or attack',
-     image: 'http://placebear.com/200/300',
-     link: 'http://placebear.com/200/300'
-   },
-]);
-
 
 class Calendar extends Component {
   constructor(props) {
@@ -71,6 +39,11 @@ class Calendar extends Component {
     })
   }
   onEventClick = (e, layout) => {
+    let elts = document.getElementsByClassName('day-selected');
+    for(let i=0; i<elts.length; i++) {
+      elts[i].classList.remove('day-selected');
+    }
+    e.target.className = e.target.className + 'day-selected'
     const {content, details, timing, image, link } = layout.attributes;
     this.setDisplayEvent(content, details, timing, image, link);
 
@@ -82,7 +55,7 @@ class Calendar extends Component {
           <h1 className="heading"> Upcoming Events </h1>
           <Dayz
             display='month'
-            date={date}
+            date={DATE}
             events={EVENTS}
             onEventClick={this.onEventClick}
           />

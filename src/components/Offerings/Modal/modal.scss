@@ -1,0 +1,123 @@
+@import '../../../styles/variables';
+
+.ReactModal__Overlay--after-open {
+  z-index: 200;
+  background-color: $trans-black !important;
+}
+.ReactModal__Content {
+  padding: 1rem 2rem !important;
+}
+
+.modal {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: $h1-font-size*2;
+    width: 90%;
+  }
+  &__heading {
+    text-transform: capitalize !important;
+  }
+  &__content {
+    margin: 0;
+    font-family: $secondary-font;
+    font-size: $p-font-size*0.9;
+  }
+  &__close-button {
+    position: absolute;
+    right: 1rem;
+    background: transparent;
+    border: 0;
+    font-size: $h1-font-size*2;
+    cursor: pointer;
+    & svg {
+      fill: $darkgrey;
+      -webkit-transition: .3s ease-in-out;
+      -moz-transition: .3s ease-in-out;
+      -o-transition: .3s ease-in-out;
+    }
+    &:hover svg {
+      fill: $blue;
+      transform: rotate(90deg);
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+  &__main-sub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__main-img {
+    width: 100%;
+    align-self: center;
+    border-radius: $border-radius;
+  }
+  &__events {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.modal-event {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__image {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+  &__link {
+    margin: 0 !important;
+  }
+  &__heading {
+    margin: 1.5rem 0 0.5rem 0 !important;
+    font-size: $p-font-size !important;
+  }
+  &__content {
+    font-family: $secondary-font;
+    font-size: $p-font-size*0.9;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ReactModal__Content {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .modal {
+    &__container {
+      width: 70%;
+    }
+    &__main {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__main-sub {
+      width: 45%;
+    }
+  }
+  .modal-event {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__sub-container {
+      width: 45%;
+    }
+    &__content {
+      margin-top: 0;
+    }
+  }
+}

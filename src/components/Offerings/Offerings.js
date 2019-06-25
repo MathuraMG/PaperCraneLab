@@ -4,6 +4,7 @@ import Offering from './Offering';
 import offering1 from '../../assets/event1.png'
 import offering2 from '../../assets/event2.png'
 import offering3 from '../../assets/event3.png'
+import {OFFERINGS} from '../../constants/offeringList.js'
 
 require('./offerings.scss');
 
@@ -15,21 +16,33 @@ class Offerings extends Component {
         <ul className="offerings__list">
           <li className="offerings__list-item">
             <Offering
-              eventHeading="Hobby Workshops and Meetups"
-              eventImg={offering3}
-            />
+              eventHeading={OFFERINGS.Hobby.Heading}
+              eventImg={OFFERINGS.Hobby.Image}
+            >
+              <div>
+                {OFFERINGS.Hobby}
+              </div>
+            </Offering>
           </li>
           <li className="offerings__list-item">
             <Offering
-              eventHeading="Coorporate Workshops and Team Activities"
-              eventImg={offering1}
-            />
+              eventHeading={OFFERINGS.Office.Heading}
+              eventImg={OFFERINGS.Office.Image}
+            >
+              <div>
+                {OFFERINGS.Office}
+              </div>
+            </Offering>
           </li>
           <li className="offerings__list-item">
             <Offering
-              eventHeading="School Workshops and Classes"
-              eventImg={offering2}
-            />
+              eventHeading={OFFERINGS.School.Heading}
+              eventImg={OFFERINGS.School.Image}
+            >
+              <div>
+                {OFFERINGS.School}
+              </div>
+            </Offering>
           </li>
         </ul>
       </section>

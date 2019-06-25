@@ -136,11 +136,13 @@ class Calendar extends Component {
             </a>
           </div>
           <div className="calendar__sub-container calendar__sub-container-left">
-            <h1 className="heading calendar__heading">  {this.state.displayHeading}
-            </h1>
-            <h2 className="sub-heading calendar__sub-heading">
-            {this.state.displayTiming}
-            </h2>
+            <div>
+              <h1 className="heading calendar__heading">  {this.state.displayHeading}
+              </h1>
+              <h2 className="sub-heading calendar__sub-heading">
+              {this.state.displayTiming}
+              </h2>
+            </div>
             <p className="content">
             {this.state.displayContent}
             </p>

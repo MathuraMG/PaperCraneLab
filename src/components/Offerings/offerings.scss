@@ -53,14 +53,13 @@
     margin: 0;
     font-size: $p-font-size;
     line-height: $p-line-height;
-    font-family: $primary-font;
     text-transform: uppercase;
     color: $black;
     text-align: center;
     z-index: 100;
     position: absolute;
     top: 20%;
-    font-weight: 1000;
+    font-weight: 900;
   }
   &__text {
     text-align: center;
@@ -70,7 +69,6 @@
 
   }
   &__button {
-    z-index: 100;
     position: absolute;
     bottom: 10%;
     width: 80%;

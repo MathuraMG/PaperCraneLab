@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 
-.events {
+.offerings {
   &__list {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .events {
+  .offerings {
     &__list {
       flex-direction: row;
       justify-content: space-between;
@@ -29,7 +29,7 @@
   }
 }
 
-.event {
+.offering {
   &__container {
     position: relative;
     border: $line-thickness solid $blue !important;

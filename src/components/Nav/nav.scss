@@ -1,5 +1,87 @@
 @import '../../styles/variables';
 
 .nav {
-  
+  &__container {
+    background: $black;
+    height: $nav-height;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+    width: calc(100% - 2rem);
+  }
+  &__big-menu {
+    display: none;
+  }
+  &__left {
+    display: flex;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__logo {
+    width: 45px;
+    height: 40px;
+    margin: auto;
+  }
+  &__heading {
+    display: none;
+    color: $white !important;
+    justify-content: center;
+    align-items: center;
+    font-size: $p-font-size !important;
+    margin: 0 1rem!important;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: $nav-height;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background: $black;
+  }
+  &__item {
+    list-style: none;
+    padding: 0.5rem 0.5rem;
+    background: $black;
+  }
+  &__item-link {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $p-font-size*0.8;
+    font-weight: 800;
+    cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
+    &--selected {
+      color: $blue;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    &__small-menu {
+      display: none;
+    }
+    &__big-menu {
+      display: flex;
+    }
+    &__heading {
+      display: flex;
+    }
+    &__list {
+      display: flex;
+      position: inherit;
+      flex-direction: row;
+    }
+  }
 }

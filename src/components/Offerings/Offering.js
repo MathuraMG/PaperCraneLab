@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-require('./events.scss');
+require('./offerings.scss');
 
-class Event extends Component {
+class Offering extends Component {
   render() {
     return (
-      <section className="event__container">
-        <h2 className="event__heading">
+      <section className="offering__container" id="offerings">
+        <h2 className="offering__heading">
           {this.props.eventHeading}
         </h2>
         <img
-          className="event__image"
+          className="offering__image"
           src={this.props.eventImg}
         />
-        <button className="button event__button">
+        <button className="button offering__button">
           Learn More
         </button>
 
@@ -23,4 +23,4 @@ class Event extends Component {
   }
 }
 
-export default Event;
+export default Offering;

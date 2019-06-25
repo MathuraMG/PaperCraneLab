@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Dayz from 'dayz';
+import moment from 'moment';
 import Container from '@material-ui/core/Container';
 import {DATE, EVENTS} from '../../constants/eventList';
+import RightButtonSVG from '../../assets/right.svg';
+import LeftButtonSVG from '../../assets/left.svg';
 
 require('dayz/dayz.scss');
 require('./calendar.scss');
@@ -11,21 +14,58 @@ class Calendar extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      dateDisplayed: DATE,
       displayHeading: 'Heading',
       displayTiming: '2pm',
       displayContent: 'Content',
       displayImage: 'image',
-      displayLink: 'Learn More'
+      displayLink: 'Learn More',
+      goLeft: true
     }
   }
 
   componentDidMount() {
+    document.querySelector('.evbody div').classList.add('day-selected');
     this.setState({
       displayHeading: EVENTS.events[0].attributes.content,
       displayContent: EVENTS.events[0].attributes.details,
       displayTiming: EVENTS.events[0].attributes.timing,
       displayImage: EVENTS.events[0].attributes.image,
       displayLink: EVENTS.events[0].attributes.link
+    })
+  }
+
+  decreaseMonth = () => {
+    let currentMonth  = moment().month();
+    let currentYear  = moment().year();
+
+    let dateDisplayed = this.state.dateDisplayed.clone();
+    dateDisplayed.subtract(1, 'months');
+
+    let dateDisplayedMonth = dateDisplayed.month();
+    let dateDisplayedYear = dateDisplayed.year();
+
+    if(
+      currentYear < dateDisplayedYear ||
+      (currentYear == dateDisplayedYear &&
+      currentMonth <= dateDisplayedMonth)
+    ) {
+      this.setState({
+        dateDisplayed: dateDisplayed
+      })
+    } else {
+      this.setState({
+        goLeft: false
+      })
+    }
+  }
+
+  increaseMonth = () => {
+    let dateDisplayed = this.state.dateDisplayed.clone();
+    dateDisplayed.add(1, 'months');
+    this.setState({
+      dateDisplayed: dateDisplayed,
+      goLeft: true
     })
   }
 
@@ -50,12 +90,34 @@ class Calendar extends Component {
   }
   render() {
     return (
-      <section className="container">
+      <section className="container" id="events">
         <section className="sub-container calendar__container-col calendar__container-small">
           <h1 className="heading"> Upcoming Events </h1>
+          <div className="calendar__details">
+            <button
+              className="calendar__change-month"
+              onClick={this.decreaseMonth}
+            >
+            <LeftButtonSVG
+              className={`calendar__change-month-button
+              ${this.state.goLeft?'':'calendar__change-month-button-static'}`}
+            />
+            </button>
+            <p className="calendar__month">
+              {this.state.dateDisplayed.format("MMM YYYY")}
+            </p>
+            <button
+              className="calendar__change-month"
+              onClick={this.increaseMonth}
+            >
+              <RightButtonSVG
+                className="calendar__change-month-button"
+              />
+            </button>
+          </div>
           <Dayz
             display='month'
-            date={DATE}
+            date={this.state.dateDisplayed}
             events={EVENTS}
             onEventClick={this.onEventClick}
           />
@@ -72,7 +134,6 @@ class Calendar extends Component {
             >
               Tell me more!
             </a>
-
           </div>
           <div className="calendar__sub-container calendar__sub-container-left">
             <h1 className="heading calendar__heading">  {this.state.displayHeading}

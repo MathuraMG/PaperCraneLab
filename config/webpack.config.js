@@ -78,11 +78,11 @@ module.exports = function (webpackEnv) {
         options: Object.assign(
           {},
           shouldUseRelativeAssetPaths ? { publicPath: '../../' } : undefined
-        ),
+        )
       },
       {
         loader: require.resolve('css-loader'),
-        options: cssOptions,
+        options: cssOptions
       },
       {
         // Options for PostCSS as we reference these options twice
@@ -97,21 +97,21 @@ module.exports = function (webpackEnv) {
             require('postcss-flexbugs-fixes'),
             require('postcss-preset-env')({
               autoprefixer: {
-                flexbox: 'no-2009',
+                flexbox: 'no-2009'
               },
-              stage: 3,
-            }),
+              stage: 3
+            })
           ],
-          sourceMap: isEnvProduction && shouldUseSourceMap,
-        },
-      },
+          sourceMap: isEnvProduction && shouldUseSourceMap
+        }
+      }
     ].filter(Boolean);
     if (preProcessor) {
       loaders.push({
         loader: require.resolve(preProcessor),
         options: {
-          sourceMap: isEnvProduction && shouldUseSourceMap,
-        },
+          sourceMap: isEnvProduction && shouldUseSourceMap
+        }
       });
     }
     return loaders;
@@ -142,7 +142,7 @@ module.exports = function (webpackEnv) {
       isEnvDevelopment &&
         require.resolve('react-dev-utils/webpackHotDevClient'),
       // Finally, this is your app's code:
-      paths.appIndexJs,
+      paths.appIndexJs
       // We include the app code last so that if there is a runtime error during
       // initialization, it doesn't blow up the WebpackDevServer client, and
       // changing JS code would still trigger a refresh.
@@ -170,7 +170,7 @@ module.exports = function (webpackEnv) {
           .relative(paths.appSrc, info.absoluteResourcePath)
           .replace(/\\/g, '/')
         : isEnvDevelopment &&
-          (info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')),
+          (info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'))
     },
     optimization: {
       minimize: isEnvProduction,
@@ -184,7 +184,7 @@ module.exports = function (webpackEnv) {
               // into invalid ecma 5 code. This is why the 'compress' and 'output'
               // sections only apply transformations that are ecma 5 safe
               // https://github.com/facebook/create-react-app/pull/4234
-              ecma: 8,
+              ecma: 8
             },
             compress: {
               ecma: 5,
@@ -198,25 +198,25 @@ module.exports = function (webpackEnv) {
               // https://github.com/facebook/create-react-app/issues/5250
               // Pending futher investigation:
               // https://github.com/terser-js/terser/issues/120
-              inline: 2,
+              inline: 2
             },
             mangle: {
-              safari10: true,
+              safari10: true
             },
             output: {
               ecma: 5,
               comments: false,
               // Turned on because emoji and regex is not minified properly using default
               // https://github.com/facebook/create-react-app/issues/2488
-              ascii_only: true,
-            },
+              ascii_only: true
+            }
           },
           // Use multi-process parallel running to improve the build speed
           // Default number of concurrent runs: os.cpus().length - 1
           parallel: true,
           // Enable file caching
           cache: true,
-          sourceMap: shouldUseSourceMap,
+          sourceMap: shouldUseSourceMap
         }),
         // This is only used in production mode
         new OptimizeCSSAssetsPlugin({
@@ -229,22 +229,22 @@ module.exports = function (webpackEnv) {
                 inline: false,
                 // `annotation: true` appends the sourceMappingURL to the end of
                 // the css file, helping the browser find the sourcemap
-                annotation: true,
+                annotation: true
               }
-              : false,
-          },
-        }),
+              : false
+          }
+        })
       ],
       // Automatically split vendor and commons
       // https://twitter.com/wSokra/status/969633336732905474
       // https://medium.com/webpack/webpack-4-code-splitting-chunk-graph-and-the-splitchunks-optimization-be739a861366
       splitChunks: {
         chunks: 'all',
-        name: false,
+        name: false
       },
       // Keep the runtime chunk separated to enable long term caching
       // https://twitter.com/wSokra/status/969679223278505985
-      runtimeChunk: true,
+      runtimeChunk: true
     },
     resolve: {
       // This allows you to set a fallback for where Webpack should look for modules.
@@ -267,7 +267,7 @@ module.exports = function (webpackEnv) {
       alias: {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-        'react-native': 'react-native-web',
+        'react-native': 'react-native-web'
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -278,15 +278,15 @@ module.exports = function (webpackEnv) {
         // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
         // please link the files into your node_modules/ and let module-resolution kick in.
         // Make sure your source files are compiled, as they will not be processed in any way.
-        new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
-      ],
+        new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson])
+      ]
     },
     resolveLoader: {
       plugins: [
         // Also related to Plug'n'Play, but this time it tells Webpack to load its loaders
         // from the current package.
-        PnpWebpackPlugin.moduleLoader(module),
-      ],
+        PnpWebpackPlugin.moduleLoader(module)
+      ]
     },
     module: {
       rules: [
@@ -316,7 +316,7 @@ module.exports = function (webpackEnv) {
               loader: 'sass-loader',
               options: {
                 includePaths: [
-                  path.resolve(SRC_DIR, 'styles'),
+                  path.resolve(SRC_DIR, 'styles')
                 ],
                 sourceMap: true
               }
@@ -340,7 +340,7 @@ module.exports = function (webpackEnv) {
           {},
           {
             inject: true,
-            template: paths.appHtml,
+            template: paths.appHtml
           },
           isEnvProduction
             ? {
@@ -354,8 +354,8 @@ module.exports = function (webpackEnv) {
                 keepClosingSlash: true,
                 minifyJS: true,
                 minifyCSS: true,
-                minifyURLs: true,
-              },
+                minifyURLs: true
+              }
             }
             : undefined
         )
@@ -398,14 +398,14 @@ module.exports = function (webpackEnv) {
           // Options similar to the same options in webpackOptions.output
           // both options are optional
           filename: 'static/css/[name].[contenthash:8].css',
-          chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+          chunkFilename: 'static/css/[name].[contenthash:8].chunk.css'
         }),
       // Generate a manifest file which contains a mapping of all asset filenames
       // to their corresponding output file so that tools can pick it up without
       // having to parse `index.html`.
       new ManifestPlugin({
         fileName: 'asset-manifest.json',
-        publicPath,
+        publicPath
       }),
       // Moment.js is an extremely popular library that bundles large locale files
       // by default due to how Webpack interprets its code. This is a practical
@@ -426,14 +426,14 @@ module.exports = function (webpackEnv) {
             new RegExp('^/_'),
             // Exclude URLs containing a dot, as they're likely a resource in
             // public/ and not a SPA route
-            new RegExp('/[^/]+\\.[^/]+$'),
-          ],
+            new RegExp('/[^/]+\\.[^/]+$')
+          ]
         }),
       // TypeScript type checking
       useTypeScript &&
         new ForkTsCheckerWebpackPlugin({
           typescript: resolve.sync('typescript', {
-            basedir: paths.appNodeModules,
+            basedir: paths.appNodeModules
           }),
           async: false,
           checkSyntacticErrors: true,
@@ -444,7 +444,7 @@ module.exports = function (webpackEnv) {
             resolveJsonModule: true,
             isolatedModules: true,
             noEmit: true,
-            jsx: 'preserve',
+            jsx: 'preserve'
           },
           reportFiles: [
             '**',
@@ -452,12 +452,12 @@ module.exports = function (webpackEnv) {
             '!**/__tests__/**',
             '!**/?(*.)(spec|test).*',
             '!**/src/setupProxy.*',
-            '!**/src/setupTests.*',
+            '!**/src/setupTests.*'
           ],
           watch: paths.appSrc,
           silent: true,
-          formatter: typescriptFormatter,
-        }),
+          formatter: typescriptFormatter
+        })
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
@@ -466,10 +466,10 @@ module.exports = function (webpackEnv) {
       fs: 'empty',
       net: 'empty',
       tls: 'empty',
-      child_process: 'empty',
+      child_process: 'empty'
     },
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
-    performance: false,
+    performance: false
   };
 };

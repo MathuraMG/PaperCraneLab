@@ -6,7 +6,7 @@ require('./about.scss');
 class About extends Component {
   render() {
     return (
-      <section className="container">
+      <section className="container" id="about">
         <section className="sub-container">
           <img
             className="about__image"

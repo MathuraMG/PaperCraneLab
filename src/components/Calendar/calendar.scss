@@ -19,9 +19,50 @@
   }
   &__event-image {
     max-width: 100%;
-    border-radius: 6px;
+    border-radius:$border-radius;
     border: 2px solid $blue !important;
     opacity: 0.7;
+  }
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $blue;
+    padding: 0.5rem 0;
+    border-top-left-radius:$border-radius;
+    border-top-right-radius:$border-radius;
+    margin-top: 1rem;
+  }
+  &__change-month {
+    cursor: pointer;
+    background: none;
+    border: 0;
+  }
+  &__change-month-button {
+    width: 15px;
+    height: 20px;
+    cursor: pointer;
+    &:hover .cls-1 {
+      fill: $darkgrey;
+    }
+    &-static {
+      cursor: auto;
+      & .cls-1 {
+        fill: $light-blue;
+      }
+      &:hover .cls-1 {
+        fill: $light-blue;
+      }
+    }
+  }
+  &__month {
+    margin: 0;
+    font-size: $p-font-size*0.8;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: $white;
   }
 }
 
@@ -70,7 +111,13 @@
   display: flex !important;
   flex-wrap: wrap !important;
   border: $line-thickness/2 solid $blue !important;
-  border-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.month {
+  display: flex !important;
+  flex-direction: column-reverse !important;
 }
 
 .day-label {

@@ -10,7 +10,7 @@ class About extends Component {
         <section className="sub-container">
           <img
             className="about__image"
-            src="https://placekitten.com/500/400"
+            src="https://placekitten.com/500/300"
             />
         </section>
 

@@ -7,7 +7,6 @@ require('./modal.scss');
 class CustomModal extends React.Component {
 
   renderOfferings = (offering) => {
-    console.log(offering.Heading)
     return(
       <div>
         <h1 className="heading modal-event__heading">

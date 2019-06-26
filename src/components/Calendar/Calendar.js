@@ -92,7 +92,7 @@ class Calendar extends Component {
     return (
       <section className="container" id="events">
         <section className="sub-container calendar__container-col calendar__container-small">
-          <h1 className="heading"> Upcoming Events </h1>
+          <h1 className="heading calendar__heading"> Upcoming Events </h1>
           <div className="calendar__details">
             <button
               className="calendar__change-month"
@@ -137,7 +137,7 @@ class Calendar extends Component {
           </div>
           <div className="calendar__sub-container calendar__sub-container-left">
             <div>
-              <h1 className="heading calendar__heading">  {this.state.displayHeading}
+              <h1 className="heading">  {this.state.displayHeading}
               </h1>
               <h2 className="sub-heading calendar__sub-heading">
               {this.state.displayTiming}

@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Switch, Router } from 'react-router';
-import { Route } from 'react-router-dom';
 import './index.css';
 import Home from './pages/Home/Home';
-
 
 ReactDOM.render(<Home />, document.getElementById('root'));
 

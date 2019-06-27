@@ -13,10 +13,11 @@ class Contact extends Component {
   }
   onLoad=()=> {
     if(this.state.submitted) {
-
+      console.log('loaded')
     }
   }
   onSubmit = () => {
+    console.log('in here')
     this.setState({
       submitted: true
     })
@@ -31,24 +32,39 @@ class Contact extends Component {
           <h1 className="heading contact__heading">
             Contact Us
           </h1>
-          <form className="contact__form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1FAIpQLSc6z-fTUefCDHIsLeiYcYCGV_hfr8LEgNRAN4lo-fF1FoJl9g/formResponse?" target="hidden_iframe" onSubmit={this.onSubmit}>
-            <input
-              className="contact__input"
-              type="email"
-              placeholder="Email"
-              name="entry.886381642"/>
-            <textarea
-              className="contact__input contact__para"
-              type="text"
-              name="entry.818097734">
-              Let us know if you have any questions
-            </textarea>
-            <input
-              className="button contact__button"
-              type="submit"
-              value="Submit"
-            />
-          </form>
+            <form
+              className={`contact__form ${this.state.submitted?'contact__form--hidden':''}`}
+              name="gform"
+              id="gform"
+              enctype="text/plain"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSc6z-fTUefCDHIsLeiYcYCGV_hfr8LEgNRAN4lo-fF1FoJl9g/formResponse?"
+              target="hidden_iframe"
+              onSubmit={this.onSubmit}
+            >
+              <input
+                className="contact__input"
+                type="email"
+                placeholder="Email"
+                name="entry.886381642"/>
+              <textarea
+                className="contact__input contact__para"
+                type="text"
+                placeholder="Let us know if you have any questions"
+                name="entry.818097734">
+
+              </textarea>
+              <input
+                className="button contact__button"
+                type="submit"
+                value="Submit"
+              />
+            </form>
+          {
+            this.state.submitted && (
+              <p className="contact__thankyou">
+              Thank you for contacting us! We will get back to you soon.
+              </p>
+            )}
           <iframe name="hidden_iframe" id="hidden_iframe" className="contact__iframe" onLoad={this.onLoad}>
           </iframe>
         </section>

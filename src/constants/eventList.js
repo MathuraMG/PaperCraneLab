@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Dayz from 'dayz';
 import moment from 'moment';
 

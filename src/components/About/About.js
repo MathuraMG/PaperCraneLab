@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 require('./about.scss');
@@ -11,7 +10,8 @@ class About extends Component {
           <img
             className="about__image"
             src="https://placekitten.com/500/300"
-            />
+            alt="partcipants from prev workshops"
+          />
         </section>
 
         <section className="sub-container">

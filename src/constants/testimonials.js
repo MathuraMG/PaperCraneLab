@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const TESTIMONIALS = [
   {
     content: 'They are amazing, cats are the best! So so fluffffyyy!',

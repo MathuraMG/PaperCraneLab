@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import OfficeImg from '../assets/event1.png';
 import SchoolImg from '../assets/event2.png';
 import HobbyImg from '../assets/event3.png';

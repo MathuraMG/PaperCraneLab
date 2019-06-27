@@ -7,7 +7,6 @@ require('./contact.scss');
 
 class Testimonials extends Component {
   renderTestimonial=(content, name)=> {
-    console.log(content);
     return (
       <div className="testimonial__container">
         <p className="testimonial__content">{content}</p>

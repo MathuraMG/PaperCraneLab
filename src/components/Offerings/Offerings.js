@@ -1,10 +1,6 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Offering from './Offering';
-import offering1 from '../../assets/event1.png'
-import offering2 from '../../assets/event2.png'
-import offering3 from '../../assets/event3.png'
-import {OFFERINGS} from '../../constants/offeringList.js'
+import { OFFERINGS } from '../../constants/offeringList.js';
 
 require('./offerings.scss');
 

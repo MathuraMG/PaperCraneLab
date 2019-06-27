@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 import Cover from '../../components/Cover/Cover';
@@ -14,20 +13,16 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Nav/>
-        <Cover/>
-        <Calendar/>
-        <About/>
-        <Offerings/>
-        <Contact/>
+        <Nav />
+        <Cover />
+        <Calendar />
+        <About />
+        <Offerings />
+        <Contact />
       </div>
     );
   }
 }
-
-Home.propTypes = {
-
-};
 
 
 export default Home;

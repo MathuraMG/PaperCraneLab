@@ -9,7 +9,7 @@ class Cover extends Component {
       <div className="cover__container">
         <img className="cover__image" src={cover} alt="top view illustration of a work table" />
         <h1 className="heading cover__heading">
-          awesome one liner about Paper Crane Lab that is this long!
+           Innovate, Create & Ideate With Technology - A Paper Crane Lab Initiative
         </h1>
       </div>
     );

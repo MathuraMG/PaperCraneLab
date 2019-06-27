@@ -1,28 +1,29 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import CustomModal from './Modal/Modal.js'
+import CustomModal from './Modal/Modal.js';
 
 require('./offerings.scss');
 
 class Offering extends Component {
   constructor() {
     super();
-    this.state={
+    this.state = {
       isModalOpen: false
-    }
+    };
   }
 
   openModal = () => {
     this.setState({
       isModalOpen: true
-    })
+    });
   }
 
   closeModal = () => {
     this.setState({
       isModalOpen: false
-    })
+    });
   }
+
   render() {
     return (
       <section className="offering__container" id="offerings">
@@ -39,6 +40,7 @@ class Offering extends Component {
         <img
           className="offering__image"
           src={this.props.eventImg}
+          alt="event poster"
         />
         <button
           className="button offering__button"
@@ -51,5 +53,13 @@ class Offering extends Component {
     );
   }
 }
+Offering.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired,
+  eventHeading: PropTypes.string.isRequired,
+  eventImg: PropTypes.string.isRequired,
+};
 
 export default Offering;

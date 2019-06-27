@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import logo from '../../assets/logo.png'
 import HamburgerMenu from 'react-hamburger-menu';
+import logo from '../../assets/logo.png';
 
 require('./nav.scss');
 
@@ -11,7 +10,7 @@ class Nav extends Component {
     this.state = {
       isHamburgerMenuOpen: false,
       selectedMenuItem: ''
-    }
+    };
   }
 
   closeHamburgerMenu = () => {
@@ -23,13 +22,14 @@ class Nav extends Component {
   selectMenuItem = (link) => {
     this.setState({
       selectedMenuItem: link
-    })
+    });
   }
 
-  toggleMenu=()=> {
-    this.setState({
-      isHamburgerMenuOpen: !this.state.isHamburgerMenuOpen
-    })
+  toggleMenu=() => {
+    this.setState(prevState => ({
+      isHamburgerMenuOpen: !prevState.isHamburgerMenuOpen
+    }
+    ));
   }
 
   renderList(display, link) {
@@ -37,15 +37,15 @@ class Nav extends Component {
       <li className="nav__item">
         <a
           className={`nav__item-link
-            ${(link===this.state.selectedMenuItem)? " nav__item-link--selected" : ""}`}
+            ${(link === this.state.selectedMenuItem) ? ' nav__item-link--selected' : ''}`}
           href={link}
-          onMouseDown={()=>this.selectMenuItem(link)}
-          onKeyDown={()=>this.selectMenuItem(link)}
+          onMouseDown={() => this.selectMenuItem(link)}
+          onKeyDown={() => this.selectMenuItem(link)}
         >
           {display}
         </a>
       </li>
-    )
+    );
   }
 
   render() {
@@ -55,6 +55,7 @@ class Nav extends Component {
           <img
             className="nav__logo"
             src={logo}
+            alt="paper crane lab logo"
           />
           <h1 className="heading nav__heading">
             Paper Crane Lab
@@ -69,12 +70,12 @@ class Nav extends Component {
               height={20}
               strokeWidth={3}
               rotate={0}
-              color='white'
+              color="white"
               borderRadius={1}
               animationDuration={0.5}
             />
           </div>
-          {this.state.isHamburgerMenuOpen &&
+          {this.state.isHamburgerMenuOpen && (
             <ul
               className="nav__list"
             >
@@ -83,7 +84,7 @@ class Nav extends Component {
               {this.renderList('Offerings', '#offerings')}
               {this.renderList('Contact Us', '#contact')}
             </ul>
-          }
+          )}
           <div className="nav__big-menu">
             <ul
               className="nav__list"

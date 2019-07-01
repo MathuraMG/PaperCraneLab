@@ -13,7 +13,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 1',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -21,7 +21,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 2',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -29,7 +29,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 3',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -37,14 +37,14 @@ export const OFFERINGS = {
     ]
   },
   Office: {
-    Heading: 'Coorporate Workshops and Team Activities',
+    Heading: 'Corporate Workshops and Team Activities',
     Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz, because a greedily high scooby snack somewhat finds much coolness with a dude. Now and then, a mating ritual buys an expensive drink for a sudsy corona light. The Corona Extra toward a malt dances with the Pilsner.',
     Image: OfficeImg,
     Offerings: [
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 1',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -52,7 +52,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 2',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -60,7 +60,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 3',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -75,7 +75,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 1',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -83,7 +83,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 2',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'
@@ -91,7 +91,7 @@ export const OFFERINGS = {
       {
         Image: 'https://placecage.com/300/300',
         Heading: 'Workshop No 3',
-        Desc: 'Coorporate Workshops and Team Activities',
+        Desc: 'Corporate Workshops and Team Activities',
         Content: 'how often the King Henry over a coors light leaves. A Yuengling starts reminiscing about a lost buzz.',
         ButtonDisplay: 'Book Now',
         ButtonLink: 'https://placekitten.com/300/300'

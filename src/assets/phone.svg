@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d2d2d;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>phone</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="site">
+      <g>
+        <rect class="cls-1" width="50" height="50" rx="6" ry="6"/>
+        <path class="cls-2" d="M34.71,26.1l-4.64,5.17a29.06,29.06,0,0,1-9.76-8.73,29.55,29.55,0,0,1-1.73-2.78l5-4.47c1.23-1.26-.74-7.45-2.93-7.45H12a4.12,4.12,0,0,0-4,3.33A33,33,0,0,0,39.16,42a4.11,4.11,0,0,0,3-3.95V29C42.16,26.85,36,24.87,34.71,26.1Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

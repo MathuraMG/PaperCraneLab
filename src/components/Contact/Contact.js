@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Testimonials from './Testimonials';
+import PhoneSVG from '../../assets/phone.svg';
+import MailSVG from '../../assets/mail.svg';
+import InstaSVG from '../../assets/insta.svg';
+import AddrSVG from '../../assets/addr.svg';
 
 require('./contact.scss');
 
@@ -33,7 +37,7 @@ class Contact extends Component {
         </section>
         <section className="contact__form-container">
           <h1 className="heading contact__heading">
-            Contact Us
+            Subscribe to our newsletter
           </h1>
           <form
             className={`contact__form ${this.state.submitted ? 'contact__form--hidden' : ''}`}
@@ -50,14 +54,6 @@ class Contact extends Component {
               placeholder="Email"
               name="entry.886381642"
             />
-            <textarea
-              className="contact__input contact__para"
-              type="text"
-              placeholder="Let us know if you have any questions"
-              name="entry.818097734"
-            >
-
-            </textarea>
             <input
               className="button contact__button"
               type="submit"
@@ -67,7 +63,7 @@ class Contact extends Component {
           {
             this.state.submitted && (
               <p className="contact__thankyou">
-              Thank you for contacting us! We will get back to you soon.
+              Thank you for subscribing to our newsletter!
               </p>
             )}
           <iframe
@@ -79,15 +75,59 @@ class Contact extends Component {
           >
           </iframe>
         </section>
+        <section className="contact__form-container">
+          <h1 className="heading contact__heading">
+            Get in Touch!
+          </h1>
+          <div className="contact__contact-container">
+            <div className="contact__sub-container">
+              <ul className="contact__items">
+                <li className="contact__item">
+                  <div className="contact__icon">
+                    <PhoneSVG alt="phone no" />
+                  </div>
+                  <div className="contact__detail">
+                    +91-12345 67890
+                  </div>
+                </li>
+                <li className="contact__item">
+                  <div className="contact__icon">
+                    <MailSVG alt="email" />
+                  </div>
+                  <div className="contact__detail">
+                    hello@papercranelab.com
+                  </div>
+                </li>
+                <li className="contact__item">
+                  <div className="contact__icon">
+                    <InstaSVG alt="instagram account" />
+                  </div>
+                  <div className="contact__detail">
+                    papercranelab
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="contact__sub-container">
+              <ul className="contact__items">
+                <li className="contact__item">
+                  <div className="contact__icon">
+                    <AddrSVG alt="office address" />
+                  </div>
+                  <div className="contact__detail">
+                    {`Studio name
+                    1st Main street, 1st main cross
+                    Rajajinagar
+                    bangalore 560098`}
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </section>
     );
   }
 }
 
 export default Contact;
-
-/*
-
-https://docs.google.com/forms/d/e/1FAIpQLSc6z-fTUefCDHIsLeiYcYCGV_hfr8LEgNRAN4lo-fF1FoJl9g/viewform?usp=pp_url&entry.886381642=test@test&entry.818097734=testest
-
-*/

@@ -2,6 +2,43 @@
 @import '../../styles/base';
 
 .contact {
+  &__items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+  }
+  &__icon {
+    cursor: pointer;
+    margin-right: 1rem;
+    width: $p-line-height;
+    height: $p-line-height;
+    &:hover {
+      & .cls-1 {
+        fill: $blue !important;
+      }
+      & .cls-2 {
+        stroke: $black !important;
+      }
+      & .cls-3 {
+        fill: $black !important;
+        stroke: $black !important;
+      }
+    }
+  }
+  &__detail {
+    font-size: $p-font-size;
+    font-family: $secondary-font;
+  }
+  &__heading {
+    font-size: $h1-font-size;
+    text-transform: capitalize !important;
+  }
   &__container {
     width: 70%;
     margin: 0 auto;
@@ -9,6 +46,7 @@
   }
   &__form-container {
     width: 85%;
+    padding-bottom: 2.5rem;
     margin: 0 auto;
   }
   &__form {
@@ -59,4 +97,30 @@
 
 .slick-dots {
   display: none !important;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    &__form {
+      display: flex;
+      flex-direction: row;
+    }
+    &__button {
+      margin: 1rem;
+      margin-right: 0;
+      width: 200px;
+    }
+    &__input {
+      width: -webkit-fill-available;
+    }
+    &__contact-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__sub-container {
+    width: 45%
+    }
+  }
 }

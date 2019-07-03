@@ -30,6 +30,11 @@ p.content {
   font-family: $secondary-font;
 }
 
+span.highlight {
+  color: $blue;
+  font-weight: 800;
+}
+
 section.container {
   display: flex;
   flex-direction: column;

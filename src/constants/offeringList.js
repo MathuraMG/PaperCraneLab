@@ -83,3 +83,9 @@ export const OFFERINGS = {
     ]
   }
 };
+
+export const UNIQUELIST = [
+  'Our <span className="highlight"> passion to involve everyone </span> and to get them engaged and excited by technical tools and use them in ways previously not thought common.',
+  'Our <span className="highlight"> trainers have deep knowledge in training classes all over the world </span> and know how to introduce a new skill within individual constraints.',
+  'We offer <span className="highlight"> wide variety of courses</span>, tailored to specific needs of organisations, individuals and children.'
+]

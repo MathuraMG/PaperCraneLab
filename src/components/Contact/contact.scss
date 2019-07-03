@@ -78,7 +78,6 @@
     @extend %button;
     max-width: 150px;
     margin: 0 !important;
-    margin-left: 1rem !important;
   }
   &__thankyou {
     font-size: $p-font-size;
@@ -116,9 +115,8 @@
       align-items: center;
     }
     &__button {
-      margin: 1rem;
-      margin-right: 0;
       width: 200px;
+      margin-left: 1rem !important;
     }
     &__input {
       width: -webkit-fill-available;

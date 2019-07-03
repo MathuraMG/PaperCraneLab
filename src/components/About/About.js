@@ -1,19 +1,17 @@
 import Slider from 'react-slick';
 import React, { Component } from 'react';
+import renderHTML from 'react-render-html';
 import { ABOUT, ABOUT_IMG } from '../../constants/aboutContent';
 
 require('./about.scss');
 
 class About extends Component {
-  renderImage=(src, alt) => {
-    console.log(src);
-    return (
-      <img
-        className="about__image"
-        src={src}
-        alt={alt}
-      />);
-  }
+  renderImage=(src, alt) => (
+    <img
+      className="about__image"
+      src={src}
+      alt={alt}
+    />)
 
   render() {
     const settings = {
@@ -35,7 +33,7 @@ class About extends Component {
         <section className="sub-container">
           <h1 className="heading"> About Us </h1>
           <p className="content">
-            {ABOUT}
+            {renderHTML(ABOUT)}
           </p>
         </section>
       </section>

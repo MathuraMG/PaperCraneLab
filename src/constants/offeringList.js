@@ -7,8 +7,15 @@ import HobbyImg from '../assets/event3.png';
 import School_PaperCircuits from '../assets/offerings/school/papercircuit.gif';
 import School_SolderSculpture from '../assets/offerings/school/solderingsculpture.png';
 import School_Coding101 from '../assets/offerings/school/coding101.png';
-import School_CodingSeries from '../assets/offerings/school/papercircuit.gif';
-import School_STEMSeries from '../assets/offerings/school/papercircuit.gif';
+import School_CodingSeries from '../assets/offerings/school/codeseries.png';
+import School_STEMSeries from '../assets/offerings/school/stemseries.png';
+
+import Hobby_Robot from '../assets/offerings/hobby/robot.png'
+import Hobby_Code from '../assets/offerings/hobby/code.gif'
+import Hobby_Meetup from '../assets/offerings/hobby/meetup.png'
+
+import Office_Proto from '../assets/offerings/office/proto.png'
+import Office_Team from '../assets/offerings/office/team.png'
 
 export const OFFERINGS = {
   Hobby: {
@@ -17,17 +24,17 @@ export const OFFERINGS = {
     Image: HobbyImg,
     Offerings: [
       {
-        Image: 'https://placecage.com/300/300',
+        Image: Hobby_Robot,
         Heading: 'Introduction to Electronics and Robotics',
         Content: 'Create your own robot with simple tools and household articles! This is just one of the things you can create in these workshops. We will explore the world of electronics and robotics and show you how simple it is to use tools like Arduino and sensors!',
       },
       {
-        Image: 'https://placecage.com/300/300',
+        Image: Hobby_Code,
         Heading: 'Creative Coding',
         Content: 'Learn about how you can combine art and coding to create fascinating digital patterns, and the fun doesn’t stop there! There is so much you can do with what you code.. put it on a bottle and jazz it up! Create digital portraits of you or your loved ones and frame it!',
       },
       {
-        Image: 'https://placecage.com/300/300',
+        Image: Hobby_Meetup,
         Heading: 'Meetups',
         Content: 'Meet with people who are working in new fields of creativity and technology! Catch up over coffee to learn more about the domain and meet new people in the field.',
       }
@@ -39,12 +46,12 @@ export const OFFERINGS = {
     Image: OfficeImg,
     Offerings: [
       {
-        Image: 'https://placecage.com/300/300',
+        Image: Office_Proto,
         Heading: 'Design Thinking and rapid prototyping workshops',
         Content: 'Design thinking and rapid prototyping are tools that will help you innovate and test your ideas faster. Learn how you can inculcate these practices in your everyday work life so that the products that you build are more efficient.',
       },
       {
-        Image: 'https://placecage.com/300/300',
+        Image: Office_Team,
         Heading: 'Team Building activities',
         Content: 'We can also help you solidify the bonds with your employees and colleagues. We curate activities suited to your team to bring the teammates together and work better collectively.',
       },
@@ -58,7 +65,7 @@ export const OFFERINGS = {
       {
         Image: School_PaperCircuits,
         Heading: 'Introduction to Electronics - Paper Circuits',
-        Content: 'Introduce children to basic electronic concepts like circuitry through paper arts. Make cards light up and make [x]',
+        Content: 'Introduce children to basic electronic concepts like circuitry through paper arts. Make cards light up and make unique art.',
       },
       {
         Image: School_SolderSculpture,

@@ -89,7 +89,7 @@ class Contact extends Component {
                     href="tel:+919513222681"
                     className="contact__detail"
                   >
-                    +91-9513 2226 81
+                    +91 95132 22681
                   </a>
                 </li>
                 <li className="contact__item">

@@ -4,7 +4,7 @@ import About2 from '../assets/about/about2.png';
 import About3 from '../assets/about/about3.png';
 import About4 from '../assets/about/about4.gif';
 
-export const ABOUT = 'Paper Crane Lab brings non-traditional technological concepts to Bangalore. Paper Crane Lab’s aim is to build a community of people with varied backgrounds who are adept at interacting with technical tools for creative projects. Our purpose is to create a holistic learning space that gives people access to affordable tools and collaborative community.';
+export const ABOUT = 'Paper Crane Lab brings non-traditional technological concepts to Bangalore. Paper Crane Lab’s aim is to build a community of people with varied backgrounds who are adept at interacting with technical tools for creative projects. <span class="highlight">Our purpose is to create a holistic learning space that gives people access to affordable tools and collaborative community.</span>';
 
 export const ABOUT_IMG = [
   {

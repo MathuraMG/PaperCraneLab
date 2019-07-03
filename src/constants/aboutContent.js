@@ -1,3 +1,26 @@
 /* eslint-disable */
+import About1 from '../assets/about/about1.png';
+import About2 from '../assets/about/about2.png';
+import About3 from '../assets/about/about3.png';
+import About4 from '../assets/about/about4.gif';
 
-export const ABOUT = 'Papercrane brings non-traditional technological concepts to Bangalore. Papercrane’s aim is to empower people with technical and non technical background to build a community of people adept with introducing tech tools to creative projects. Our purpose is to create a holistic learning space with gives people access to affordable tech tools.';
+export const ABOUT = 'Paper Crane Lab brings non-traditional technological concepts to Bangalore. Paper Crane Lab’s aim is to build a community of people with varied backgrounds who are adept at interacting with technical tools for creative projects. Our purpose is to create a holistic learning space that gives people access to affordable tools and collaborative community.';
+
+export const ABOUT_IMG = [
+  {
+    src: About1,
+    alt: 'groupf of people working in kirigami'
+  },
+  {
+    src: About2,
+    alt: 'creative coding meetup group'
+  },
+  {
+    src: About3,
+    alt: 'sculture made out of led of man playing bass'
+  },
+  {
+    src: About4,
+    alt: 'animation showing person coding patterns'
+  }
+];

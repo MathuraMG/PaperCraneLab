@@ -15,8 +15,8 @@ class Home extends Component {
       <div>
         <Nav />
         <Cover />
-        <Calendar />
         <About />
+        <Calendar />
         <Offerings />
         <Contact />
       </div>

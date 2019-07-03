@@ -33,7 +33,6 @@ class Contact extends Component {
     return (
       <section className="contact__container">
         <section className="contact__testimonials">
-          <Testimonials />
         </section>
         <section className="contact__form-container">
           <h1 className="heading contact__heading">
@@ -86,40 +85,34 @@ class Contact extends Component {
                   <div className="contact__icon">
                     <PhoneSVG alt="phone no" />
                   </div>
-                  <div className="contact__detail">
-                    +91-12345 67890
-                  </div>
+                  <a
+                    href="tel:+919513222681"
+                    className="contact__detail"
+                  >
+                    +91-9513 2226 81
+                  </a>
                 </li>
                 <li className="contact__item">
                   <div className="contact__icon">
                     <MailSVG alt="email" />
                   </div>
-                  <div className="contact__detail">
+                  <a
+                    href="mailto:hello@papercranelab.com"
+                    className="contact__detail"
+                  >
                     hello@papercranelab.com
-                  </div>
+                  </a>
                 </li>
                 <li className="contact__item">
                   <div className="contact__icon">
                     <InstaSVG alt="instagram account" />
                   </div>
-                  <div className="contact__detail">
+                  <a
+                    href="https://www.instagram.com/papercranelab/"
+                    className="contact__detail"
+                  >
                     papercranelab
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="contact__sub-container">
-              <ul className="contact__items">
-                <li className="contact__item">
-                  <div className="contact__icon">
-                    <AddrSVG alt="office address" />
-                  </div>
-                  <div className="contact__detail">
-                    {`Studio name
-                    1st Main street, 1st main cross
-                    Rajajinagar
-                    bangalore 560098`}
-                  </div>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -131,3 +124,28 @@ class Contact extends Component {
 }
 
 export default Contact;
+
+/*
+
+<section className="contact__testimonials">
+  <Testimonials />
+</section>
+
+
+<div className="contact__sub-container">
+  <ul className="contact__items">
+    <li className="contact__item">
+      <div className="contact__icon">
+        <AddrSVG alt="office address" />
+      </div>
+      <div className="contact__detail">
+        {`Studio name
+        1st Main street, 1st main cross
+        Rajajinagar
+        bangalore 560098`}
+      </div>
+    </li>
+  </ul>
+</div>
+
+*/

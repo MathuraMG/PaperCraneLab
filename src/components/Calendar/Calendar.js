@@ -18,7 +18,9 @@ class Calendar extends Component {
       displayContent: 'Content',
       displayImage: 'image',
       displayLink: 'Learn More',
-      goLeft: true
+      displayLocation: 'Home',
+      displayAudience: 'Cats',
+      goLeft: false
     };
   }
 
@@ -29,7 +31,9 @@ class Calendar extends Component {
       displayContent: HIGHLIGHT_EVENT.details,
       displayTiming: HIGHLIGHT_EVENT.timing,
       displayImage: HIGHLIGHT_EVENT.image,
-      displayLink: HIGHLIGHT_EVENT.link
+      displayLink: HIGHLIGHT_EVENT.link,
+      displayLocation: HIGHLIGHT_EVENT.location,
+      displayAudience: HIGHLIGHT_EVENT.audience,
     });
   }
 
@@ -67,13 +71,15 @@ class Calendar extends Component {
     });
   }
 
-  setDisplayEvent = (heading, content, timing, image, link) => {
+  setDisplayEvent = (heading, content, timing, image, link, location, audience) => {
     this.setState({
       displayHeading: heading,
       displayTiming: timing,
       displayContent: content,
       displayImage: image,
-      displayLink: link
+      displayLink: link,
+      displayLocation: location,
+      displayAudience: audience
     });
   }
 
@@ -83,8 +89,8 @@ class Calendar extends Component {
       elts[i].classList.remove('day-selected');
     }
     e.target.className = `${e.target.className}day-selected`;
-    const { content, details, timing, image, link } = layout.attributes;
-    this.setDisplayEvent(content, details, timing, image, link);
+    const { content, details, timing, image, link, location, audience } = layout.attributes;
+    this.setDisplayEvent(content, details, timing, image, link, location, audience);
   }
 
   render() {
@@ -134,7 +140,7 @@ class Calendar extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Tell me more!
+              Book Now!
             </a>
           </div>
           <div className="calendar__sub-container calendar__sub-container-left">
@@ -146,6 +152,13 @@ class Calendar extends Component {
               <h2 className="sub-heading calendar__sub-heading">
                 {this.state.displayTiming}
               </h2>
+              <h2 className="sub-heading calendar__sub-heading-1">
+                {this.state.displayLocation}
+              </h2>
+              <h2 className="sub-heading calendar__sub-heading-1">
+                {this.state.displayAudience}
+              </h2>
+
             </div>
             <p className="content">
               {this.state.displayContent}

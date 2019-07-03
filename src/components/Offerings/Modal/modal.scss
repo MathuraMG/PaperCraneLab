@@ -78,7 +78,7 @@
     border-radius: $border-radius;
   }
   &__link {
-    margin: 0 !important;
+    margin: 2rem auto !important;
   }
   &__heading {
     margin: 1.5rem 0 0.5rem 0 !important;
@@ -90,7 +90,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .ReactModal__Content {
     width: 60%;
     margin: 0 auto;

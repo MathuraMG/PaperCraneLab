@@ -8,7 +8,7 @@ class Offerings extends Component {
   render() {
     return (
       <section className="container container-col" id="offerings">
-        <h1 className="heading offerings__heading"> What can we do for you </h1>
+        <h1 className="heading offerings__heading"> Offerings </h1>
         <ul className="offerings__list">
           <li className="offerings__list-item">
             <Offering
@@ -20,6 +20,7 @@ class Offerings extends Component {
               </div>
             </Offering>
           </li>
+
           <li className="offerings__list-item">
             <Offering
               eventHeading={OFFERINGS.Office.Heading}
@@ -30,6 +31,7 @@ class Offerings extends Component {
               </div>
             </Offering>
           </li>
+
           <li className="offerings__list-item">
             <Offering
               eventHeading={OFFERINGS.School.Heading}
@@ -41,6 +43,7 @@ class Offerings extends Component {
             </Offering>
           </li>
         </ul>
+        <Unique />
       </section>
     );
   }

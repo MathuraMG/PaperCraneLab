@@ -23,14 +23,6 @@ class CustomModal extends React.Component {
           <p className="modal-event__content">
             {offering.Content}
           </p>
-          <a
-            className="button modal-event__link"
-            href={offering.ButtonLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {offering.ButtonDisplay}
-          </a>
         </div>
       </div>
     </div>
@@ -72,6 +64,12 @@ class CustomModal extends React.Component {
               {content.Offerings.map(offering => this.renderOfferings(offering))
               }
             </section>
+            <a
+              className="button modal-event__link"
+              href="mailto:hello@papercranelab.com"
+            >
+              Have Questions? Ask Us!
+            </a>
           </section>
         </Modal>
       </div>

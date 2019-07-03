@@ -34,6 +34,12 @@
   &__detail {
     font-size: $p-font-size;
     font-family: $secondary-font;
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+      font-weight: 800;
+    }
   }
   &__heading {
     font-size: $h1-font-size;
@@ -42,7 +48,7 @@
   &__container {
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
   }
   &__form-container {
     width: 85%;
@@ -71,6 +77,8 @@
   &__button {
     @extend %button;
     max-width: 150px;
+    margin: 0 !important;
+    margin-left: 1rem !important;
   }
   &__thankyou {
     font-size: $p-font-size;
@@ -100,11 +108,12 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .contact {
     &__form {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
     &__button {
       margin: 1rem;

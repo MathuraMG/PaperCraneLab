@@ -15,24 +15,41 @@
     opacity: 0.6;
     overflow: hidden;
   }
-  &__heading {
+  &__heading-container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 86%;
+    margin: 0 7%;
+  }
+  &__heading {
+    font-family: $cover-font !important;
+    font-size: 2.2rem !important;
+    line-height: 2.5rem !important;
+    text-align: center;
+  }
+  &__sub-heading {
+    font-family: $cover-font !important;
+    font-size: 1.5rem !important;
+    line-height: 1.8rem !important;
+    color: $black;
     text-align: center;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .cover {
     &__image {
       width: 100%;
       height: auto;
       transform: none;
       max-height: 80vh;
+    }
+    &__heading-container {
+      top: 40%;
     }
   }
 }

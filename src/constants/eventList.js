@@ -9,9 +9,9 @@ export const JULY13 = moment('2019-07-13');
 export const JULY20 = moment('2019-07-20');
 export const JULY26 = moment('2019-07-26');
 
-import ImgJULY13 from '../assets/events/papercircuits.png';
-import ImgJULY20 from '../assets/events/kirigami.png';
-import ImgJULY26 from '../assets/events/papercircuits.png';
+import ImgJULY13 from 'https://pclimages.s3.amazonaws.com/images/events/papercircuits.png';
+import ImgJULY20 from 'https://pclimages.s3.amazonaws.com/images/events/kirigami.png';
+// import ImgJULY26 from '../assets/events/papercircuits.png';
 
 export const EVENTS = new Dayz.EventsCollection([
   {

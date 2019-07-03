@@ -4,18 +4,18 @@ import OfficeImg from '../assets/event1.png';
 import SchoolImg from '../assets/event2.png';
 import HobbyImg from '../assets/event3.png';
 
-import School_PaperCircuits from '../assets/offerings/school/papercircuit.gif';
-import School_SolderSculpture from '../assets/offerings/school/solderingsculpture.png';
-import School_Coding101 from '../assets/offerings/school/coding101.png';
-import School_CodingSeries from '../assets/offerings/school/codeseries.png';
-import School_STEMSeries from '../assets/offerings/school/stemseries.png';
+import School_PaperCircuits from 'https://pclimages.s3.amazonaws.com/images/offerings/school/papercircuit.gif';
+import School_SolderSculpture from 'https://pclimages.s3.amazonaws.com/images/offerings/school/solderingsculpture.png';
+import School_Coding101 from 'https://pclimages.s3.amazonaws.com/images/offerings/school/coding101.png';
+import School_CodingSeries from 'https://pclimages.s3.amazonaws.com/images/offerings/school/codeseries.png';
+import School_STEMSeries from 'https://pclimages.s3.amazonaws.com/images/offerings/school/stemseries.png';
 
-import Hobby_Robot from '../assets/offerings/hobby/robot.png'
-import Hobby_Code from '../assets/offerings/hobby/code.gif'
-import Hobby_Meetup from '../assets/offerings/hobby/meetup.png'
+import Hobby_Robot from 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/robot.png'
+import Hobby_Code from 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/code.gif'
+import Hobby_Meetup from 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/meetup.png'
 
-import Office_Proto from '../assets/offerings/office/proto.png'
-import Office_Team from '../assets/offerings/office/team.png'
+import Office_Proto from 'https://pclimages.s3.amazonaws.com/images/offerings/office/proto.png'
+import Office_Team from 'https://pclimages.s3.amazonaws.com/images/offerings/office/team.png'
 
 export const OFFERINGS = {
   Hobby: {

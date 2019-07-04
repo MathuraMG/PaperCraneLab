@@ -9,8 +9,8 @@ export const JULY13 = moment('2019-07-13');
 export const JULY20 = moment('2019-07-20');
 export const JULY26 = moment('2019-07-26');
 
-import ImgJULY13 from 'https://pclimages.s3.amazonaws.com/images/events/papercircuits.png';
-import ImgJULY20 from 'https://pclimages.s3.amazonaws.com/images/events/kirigami.png';
+const ImgJULY13 = 'https://pclimages.s3.amazonaws.com/images/events/papercircuits.png';
+const ImgJULY20 = 'https://pclimages.s3.amazonaws.com/images/events/kirigami.png';
 // import ImgJULY26 from '../assets/events/papercircuits.png';
 
 export const EVENTS = new Dayz.EventsCollection([
@@ -21,7 +21,7 @@ export const EVENTS = new Dayz.EventsCollection([
     JULY13.clone().hour(16)),
     details: 'Instil the spirit of engineering in your children early on. Introduce them to basic engineering tools and excite them to think analytically while working on fun art and creative projects, a technique that is becoming increasingly popular in western education. We have curated a workshop specially for children of the ages 8-14 years to create art using simple technology like circuits.',
     image: ImgJULY13,
-    link: '/comingsoon.html',
+    link: 'https://www.eventshigh.com/detail/Bangalore/d0fab5f956c09dc710b8066acb831b98',
     location: 'Venue: Dialogues Cafe, JP Nagar',
     audience: 'Age: 8 - 12 yrs'
   },
@@ -44,7 +44,7 @@ export const EVENTS = new Dayz.EventsCollection([
       JULY20.clone().hour(11)),
     details: 'Kirigami is the result of geometry and creativity coming together! It is a form of creative paper crafting. Here is what we do – we teach you how to cut and fold paper in unique patterns to create individualised paper art. You will not believe how meditative this art form is!',
     image: ImgJULY20,
-    link: '/comingsoon.html',
+    link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
     location: 'Venue: Dialogues Cafe, JP Nagar',
     audience: 'Age: 10yrs +'
   }

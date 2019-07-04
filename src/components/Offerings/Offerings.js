@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Offering from './Offering';
-import Unique from './Unique/Unique';
 import { OFFERINGS } from '../../constants/offeringList.js';
 
 require('./offerings.scss');
@@ -44,7 +43,6 @@ class Offerings extends Component {
             </Offering>
           </li>
         </ul>
-        <Unique />
       </section>
     );
   }

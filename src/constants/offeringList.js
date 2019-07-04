@@ -4,18 +4,18 @@ import OfficeImg from '../assets/event1.png';
 import SchoolImg from '../assets/event2.png';
 import HobbyImg from '../assets/event3.png';
 
-import School_PaperCircuits from 'https://pclimages.s3.amazonaws.com/images/offerings/school/papercircuit.gif';
-import School_SolderSculpture from 'https://pclimages.s3.amazonaws.com/images/offerings/school/solderingsculpture.png';
-import School_Coding101 from 'https://pclimages.s3.amazonaws.com/images/offerings/school/coding101.png';
-import School_CodingSeries from 'https://pclimages.s3.amazonaws.com/images/offerings/school/codeseries.png';
-import School_STEMSeries from 'https://pclimages.s3.amazonaws.com/images/offerings/school/stemseries.png';
+const School_PaperCircuits = 'https://pclimages.s3.amazonaws.com/images/offerings/school/papercircuit.gif';
+const School_SolderSculpture = 'https://pclimages.s3.amazonaws.com/images/offerings/school/solderingsculpture.png';
+const School_Coding101 = 'https://pclimages.s3.amazonaws.com/images/offerings/school/coding101.png';
+const School_CodingSeries = 'https://pclimages.s3.amazonaws.com/images/offerings/school/codeseries.png';
+const School_STEMSeries = 'https://pclimages.s3.amazonaws.com/images/offerings/school/stemseries.png';
 
-import Hobby_Robot from 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/robot.png'
-import Hobby_Code from 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/code.gif'
-import Hobby_Meetup from 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/meetup.png'
+const Hobby_Robot = 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/robot.png'
+const Hobby_Code = 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/code.gif'
+const Hobby_Meetup = 'https://pclimages.s3.amazonaws.com/images/offerings/hobby/meetup.png'
 
-import Office_Proto from 'https://pclimages.s3.amazonaws.com/images/offerings/office/proto.png'
-import Office_Team from 'https://pclimages.s3.amazonaws.com/images/offerings/office/team.png'
+const Office_Proto = 'https://pclimages.s3.amazonaws.com/images/offerings/office/proto.png'
+const Office_Team = 'https://pclimages.s3.amazonaws.com/images/offerings/office/team.png'
 
 export const OFFERINGS = {
   Hobby: {

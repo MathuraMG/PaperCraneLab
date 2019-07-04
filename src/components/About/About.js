@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import React, { Component } from 'react';
 import renderHTML from 'react-render-html';
+import Unique from './Unique/Unique';
 import { ABOUT, ABOUT_IMG } from '../../constants/aboutContent';
 
 require('./about.scss');
@@ -36,6 +37,7 @@ class About extends Component {
             {renderHTML(ABOUT)}
           </p>
         </section>
+        <Unique />
       </section>
     );
   }

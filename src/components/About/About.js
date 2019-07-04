@@ -24,21 +24,25 @@ class About extends Component {
       slidesToScroll: 1
     };
     return (
-      <section className="container" id="about">
-        <section className="sub-container">
-          <Slider {...settings}>
-            {ABOUT_IMG.map(img => this.renderImage(img.src, img.alt))}
+      <div>
+        <section className="container" id="about">
+          <section className="sub-container">
+            <Slider {...settings}>
+              {ABOUT_IMG.map(img => this.renderImage(img.src, img.alt))}
 
-          </Slider>
+            </Slider>
+          </section>
+          <section className="sub-container">
+            <h1 className="heading"> About Us </h1>
+            <p className="content">
+              {renderHTML(ABOUT)}
+            </p>
+          </section>
         </section>
-        <section className="sub-container">
-          <h1 className="heading"> About Us </h1>
-          <p className="content">
-            {renderHTML(ABOUT)}
-          </p>
+        <section className="container" id="about">
+          <Unique />
         </section>
-        <Unique />
-      </section>
+      </div>
     );
   }
 }

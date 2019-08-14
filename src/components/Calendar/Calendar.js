@@ -134,14 +134,16 @@ class Calendar extends Component {
               src={this.state.displayImage}
               alt="event poster"
             />
-            <a
-              className="button"
-              href={this.state.displayLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            {this.state.displayLink && (
+              <a
+                className="button"
+                href={this.state.displayLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               Book Now!
-            </a>
+              </a>
+            )}
           </div>
           <div className="calendar__sub-container calendar__sub-container-left">
             <div>

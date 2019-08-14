@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Modal from 'react-modal';
-import { IoIosClose } from 'react-icons/io';
 
 require('./modal.scss');
 
@@ -40,7 +39,7 @@ class CustomModal extends React.Component {
             className="modal__close-button"
             onClick={this.props.closeModal}
           >
-            <IoIosClose />
+            x
           </button>
           <section className="modal__container">
             <section className="modal__main">

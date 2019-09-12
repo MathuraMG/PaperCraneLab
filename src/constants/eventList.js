@@ -5,115 +5,41 @@ import moment from 'moment';
 
 export const DATE = moment('2019-09-01');
 
-export const SEPT4 = moment('2019-09-04');
-export const SEPT11 = moment('2019-09-11');
-export const SEPT18 = moment('2019-09-18');
-export const SEPT25 = moment('2019-09-25');
+export const SEPT14 = moment('2019-09-14');
+export const SEPT21 = moment('2019-09-21');
+export const OCT12 = moment('2019-10-12');
 
-export const OCT2 = moment('2019-10-02');
-export const OCT9 = moment('2019-10-09');
-export const OCT16 = moment('2019-10-16');
-export const OCT23 = moment('2019-10-23');
-
-const ImgSTEM = 'https://pclimages.s3.amazonaws.com/images/events/kids_stem.png';
+const ImgSEPT14 = 'https://pclimages.s3.amazonaws.com/images/events/20190914_Paper Circuits-01.png';
+const ImgSEPT21 = 'https://pclimages.s3.amazonaws.com/images/events/2019_09_21_CCsante_Meetup-01.png';
 
 export const EVENTS = new Dayz.EventsCollection([
   {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(SEPT4.clone().hour(8),
-      SEPT4.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
+    content: 'Paper Circuits for Kids',
+    timing: 'Sept 14 | 11:00am - 5:30pm',
+    range: moment.range(SEPT14.clone().hour(8),
+      SEPT14.clone().hour(11)),
+    details: `Instill the spirit of engineering in your children early on. Introduce them to  basic engineering tools  and excite them to think analytically while working on fun art and tech projects!
     RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
+    image: ImgSEPT14,
     // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
     location: 'Venue: The Popsicle Studio, Cunningham Rd',
     audience: 'Age: 8-12 yrs +'
   },
+
   {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(SEPT11.clone().hour(8),
-      SEPT11.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
-    RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
+    content: 'Creative Coding Sante Online Meetup',
+    timing: 'Sept 14 | 11:00am - 5:30pm',
+    range: moment.range(SEPT21.clone().hour(8),
+      SEPT21.clone().hour(11)),
+    details: `Join our meetup to learn more about creative coding and daily art practice. Discuss the joys of making through davily practice such as #100daysofmaking.
+    Email hello@papercranelab. to RSVP`,
+    image: ImgSEPT21,
     // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: The Popsicle Studio, Cunningham Rd',
-    audience: 'Age: 8-12 yrs +'
+    location: 'Venue: Voxelscapes Studio, Koramangala',
+    // audience: 'Age: 8-12 yrs +'
   },
-  {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(SEPT18.clone().hour(8),
-      SEPT18.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
-    RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: The Popsicle Studio, Cunningham Rd',
-    audience: 'Age: 8-12 yrs +'
-  },
-  {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(SEPT25.clone().hour(8),
-      SEPT25.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
-    RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: The Popsicle Studio, Cunningham Rd',
-    audience: 'Age: 8-12 yrs +'
-  },
-  {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(OCT2.clone().hour(8),
-      OCT2.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
-    RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: The Popsicle Studio, Cunningham Rd',
-    audience: 'Age: 8-12 yrs +'
-  },
-  {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(OCT9.clone().hour(8),
-      OCT9.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
-    RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: The Popsicle Studio, Cunningham Rd',
-    audience: 'Age: 8-12 yrs +'
-  },
-  {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(OCT16.clone().hour(8),
-      OCT16.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
-    RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: The Popsicle Studio, Cunningham Rd',
-    audience: 'Age: 8-12 yrs +'
-  },
-  {
-    content: 'STEM Course for Kids',
-    timing: 'Sept 4 - Oct 23 | 4:00pm - 5:30pm',
-    range: moment.range(OCT23.clone().hour(8),
-      OCT23.clone().hour(11)),
-    details: `Tease your child's natural curiosity with engaging activities, puzzles and tools that engross your child in SREM projects and builds their interests in learning about technology. Come join us for this 8-class session to learn more!
-    RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSTEM,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: The Popsicle Studio, Cunningham Rd',
-    audience: 'Age: 8-12 yrs +'
-  }
+
+
 ]);
 
 export const HIGHLIGHT_EVENT = {
@@ -121,10 +47,10 @@ export const HIGHLIGHT_EVENT = {
   timing: EVENTS.events[0].attributes.timing,
   range: EVENTS.events[0].attributes.range,
   details: EVENTS.events[0].attributes.details,
-  image: EVENTS.events[0].attributes.image,
+  image: EVENTS.events[0].attributes.image?EVENTS.events[0].attributes.image:'',
   link: EVENTS.events[0].attributes.link,
   location: EVENTS.events[0].attributes.location,
-  audience: EVENTS.events[0].attributes.audience
+  audience: EVENTS.events[0].attributes.audience? EVENTS.events[0].attributes.audience: ''
 };
 
 /*

@@ -3,43 +3,51 @@
 import Dayz from 'dayz';
 import moment from 'moment';
 
-export const DATE = moment('2019-09-01');
+export const DATE = moment('2019-10-01');
 
-export const SEPT14 = moment('2019-09-14');
-export const SEPT21 = moment('2019-09-21');
-export const OCT12 = moment('2019-10-12');
+export const OCT3 = moment('2019-10-3');
+export const OCT4 = moment('2019-10-4');
+export const OCT5 = moment('2019-10-5');
 
-const ImgSEPT14 = 'https://pclimages.s3.amazonaws.com/images/events/20190914_Paper Circuits-01.png';
-const ImgSEPT21 = 'https://pclimages.s3.amazonaws.com/images/events/2019_09_21_CCsante_Meetup-01.png';
+const ImgOCT3 = 'https://pclimages.s3.amazonaws.com/images/events/2019_10_03_Popsicle_Dussera.png';
+const ImgOCT4 = 'https://pclimages.s3.amazonaws.com/images/events/2019_10_04_Popsicle_Dussera.png';
+const ImgOCT5 = 'https://pclimages.s3.amazonaws.com/images/events/2019_10_05_Popsicle_Dussera.png';
+
 
 export const EVENTS = new Dayz.EventsCollection([
   {
-    content: 'Paper Circuits for Kids',
-    timing: 'Sept 14 | 11:00am - 5:30pm',
-    range: moment.range(SEPT14.clone().hour(8),
-      SEPT14.clone().hour(11)),
-    details: `Instill the spirit of engineering in your children early on. Introduce them to  basic engineering tools  and excite them to think analytically while working on fun art and tech projects!
+    content: 'Coding Stickers for Kids',
+    timing: 'October 3rd | 11:00am - 1:00pm',
+    range: moment.range(OCT3.clone().hour(11),
+      OCT3.clone().hour(13)),
+    details: `At this introduction to Coding workshop, we will learn the basics of programming through fun drawings and animations!
     RSVP at +91-9886795010 or + 91-9513222681`,
-    image: ImgSEPT14,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
+    image: ImgOCT3,
     location: 'Venue: The Popsicle Studio, Cunningham Rd',
     audience: 'Age: 8-12 yrs +'
   },
-
   {
-    content: 'Creative Coding Sante Online Meetup',
-    timing: 'Sept 14 | 11:00am - 5:30pm',
-    range: moment.range(SEPT21.clone().hour(8),
-      SEPT21.clone().hour(11)),
-    details: `Join our meetup to learn more about creative coding and daily art practice. Discuss the joys of making through davily practice such as #100daysofmaking.
-    Email hello@papercranelab. to RSVP`,
-    image: ImgSEPT21,
-    // link: 'https://www.eventshigh.com/detail/Bangalore/a5e21b71daa9e7f042ce3b3cb61adbe4',
-    location: 'Venue: Voxelscapes Studio, Koramangala',
-    // audience: 'Age: 8-12 yrs +'
+    content: 'Kirigami for Kids',
+    timing: 'October 4th | 11:00am - 1:00pm',
+    range: moment.range(OCT4.clone().hour(11),
+      OCT4.clone().hour(13)),
+    details: `At our Kirigami workshop, and combine the world of art and geometry to create gorgeous structures with paper.
+    RSVP at +91-9886795010 or + 91-9513222681`,
+    image: ImgOCT4,
+    location: 'Venue: The Popsicle Studio, Cunningham Rd',
+    audience: 'Age: 8-12 yrs +'
   },
-
-
+  {
+    content: 'Woodworking for Kids',
+    timing: 'October 5th | 11:00am - 1:00pm',
+    range: moment.range(OCT5.clone().hour(11),
+      OCT5.clone().hour(13)),
+    details: `Get your children to experience the joy of being a tech-art-maker at this one of a kind workshop. We will work together to make key holders out of recycled keys with basic mechanical tools!
+    RSVP at +91-9886795010 or + 91-9513222681`,
+    image: ImgOCT5,
+    location: 'Venue: The Popsicle Studio, Cunningham Rd',
+    audience: 'Age: 8-12 yrs +'
+  }
 ]);
 
 export const HIGHLIGHT_EVENT = {

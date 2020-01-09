@@ -58,7 +58,7 @@ export const OFFERINGS = {
     ]
   },
   School: {
-    Heading: 'School Workshops and Classes',
+    Heading: 'School Workshops and Classes (4th - 8th Standard)',
     Content: 'Be at par with the new age urban education philosophy, popular in North America and Western Europe.',
     Image: SchoolImg,
     Offerings: [

@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Modal from 'react-modal';
+import PhoneSVG from '../../../assets/phone.svg';
+import MailSVG from '../../../assets/mail.svg';
 
 require('./modal.scss');
 
@@ -63,12 +65,35 @@ class CustomModal extends React.Component {
               {content.Offerings.map(offering => this.renderOfferings(offering))
               }
             </section>
-            <a
-              className="button modal-event__link"
-              href="mailto:hello@papercranelab.com"
+            <h2
+              className="sub-heading modal__ask-heading"
             >
               Have Questions? Ask Us!
-            </a>
+            </h2>
+            <ul className="modal__ask">
+              <li className="contact__item">
+                <div className="contact__icon">
+                  <PhoneSVG alt="phone no" />
+                </div>
+                <a
+                  href="tel:+919513222681"
+                  className="contact__detail"
+                >
+                +91 95132 22681
+                </a>
+              </li>
+              <li className="contact__item">
+                <div className="contact__icon">
+                  <MailSVG alt="email" />
+                </div>
+                <a
+                  href="mailto:hello@papercranelab.com"
+                  className="contact__detail"
+                >
+                hello@papercranelab.com
+                </a>
+              </li>
+            </ul>
           </section>
         </Modal>
       </div>

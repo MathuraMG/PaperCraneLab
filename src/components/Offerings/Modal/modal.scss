@@ -19,6 +19,9 @@
   &__heading {
     text-transform: capitalize !important;
   }
+  &__ask-heading {
+    margin-top: 1.5rem !important;
+  }
   &__content {
     margin: 0;
     font-family: $secondary-font;

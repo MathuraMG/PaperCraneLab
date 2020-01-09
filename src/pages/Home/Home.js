@@ -6,6 +6,7 @@ import Calendar from '../../components/Calendar/Calendar';
 import About from '../../components/About/About';
 import Offerings from '../../components/Offerings/Offerings';
 import Contact from '../../components/Contact/Contact';
+import Tutorial from '../../components/Tutorial/Tutorial';
 
 require('./home.scss');
 
@@ -16,7 +17,7 @@ class Home extends Component {
         <Nav />
         <Cover />
         <About />
-        <Calendar />
+        <Tutorial />
         <Offerings />
         <Contact />
       </div>

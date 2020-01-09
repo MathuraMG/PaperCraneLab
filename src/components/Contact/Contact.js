@@ -33,6 +33,7 @@ class Contact extends Component {
     return (
       <section className="contact__container">
         <section className="contact__testimonials">
+          <Testimonials />
         </section>
         <section className="contact__form-container">
           <h1 className="heading contact__heading">

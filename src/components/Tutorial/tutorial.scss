@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+@import '../../styles/base';
+
+.tutorial {
+  &__sub-heading-1 {
+    color: $black !important;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    &-left {
+      align-items: flex-start;
+    }
+  }
+  &__video {
+    max-width: 100%;
+  }
+  &__link {
+    text-decoration: none;
+    color: $blue;
+    font-weight: 800;
+    &:hover {
+      color: $darkgrey;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tutorial {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__container-big {
+      width: 55% !important;
+    }
+    &__container-small {
+      width: 40% !important;
+    }
+    &__sub-container {
+      width: 48%;
+    }
+  }
+}

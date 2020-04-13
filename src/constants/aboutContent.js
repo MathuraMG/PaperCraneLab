@@ -1,9 +1,8 @@
 /* eslint-disable */
-const About1 = 'https://pclimages.s3.amazonaws.com/images/about/about1.png';
-const About2 = 'https://pclimages.s3.amazonaws.com/images/about/about2.png';
-const About3 = 'https://pclimages.s3.amazonaws.com/images/about/about3.png';
-const About4 = 'https://pclimages.s3.amazonaws.com/images/about/about4.gif';
-const About5 = 'https://pclimages.s3.amazonaws.com/images/about/about5.png';
+const About1 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about1.png';
+const About2 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about2.png';
+const About3 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about3.png';
+const About4 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about4.png';
 
 export const ABOUT = `
 Paper Crane Lab curates workshops and classes for those who are passionate about tech-art. We specialise in catering to businesses that want to inculcate agile thinking by inducing an out of the box approach to solution building.
@@ -20,18 +19,14 @@ export const ABOUT_IMG = [
   },
   {
     src: About2,
-    alt: 'creative coding meetup group'
-  },
-  {
-    src: About5,
-    alt: 'kids working on an electronics project'
+    alt: 'sculpture made out of led of man playing bass'
   },
   {
     src: About3,
-    alt: 'sculture made out of led of man playing bass'
+    alt: 'kids working on an electronics project'
   },
   {
     src: About4,
-    alt: 'animation showing person coding patterns'
+    alt: 'creative coding meetup group'
   }
 ];

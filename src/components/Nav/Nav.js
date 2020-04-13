@@ -80,7 +80,7 @@ class Nav extends Component {
               className="nav__list"
             >
               {this.renderList('About', '#about')}
-              {this.renderList('Events', '#events')}
+              {this.renderList('Tutorials', '#tutorial')}
               {this.renderList('Offerings', '#offerings')}
               {this.renderList('Contact', '#contact')}
             </ul>
@@ -90,7 +90,7 @@ class Nav extends Component {
               className="nav__list"
             >
               {this.renderList('About', '#about')}
-              {this.renderList('Events', '#events')}
+              {this.renderList('Tutorials', '#tutorial')}
               {this.renderList('Offerings', '#offerings')}
               {this.renderList('Contact', '#contact')}
             </ul>

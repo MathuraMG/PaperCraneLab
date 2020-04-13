@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import Cover from '../../components/Cover/Cover';
 import Nav from '../../components/Nav/Nav';
@@ -20,6 +21,11 @@ class Home extends Component {
         <Tutorial />
         <Offerings />
         <Contact />
+        <footer class="footer">
+          <Link to="/tos">Terms of Service</Link>
+          <Link to="/refund">Cancellation and Refund</Link>
+          <Link to="/privacy">Privacy Policy</Link>
+        </footer>
       </div>
     );
   }

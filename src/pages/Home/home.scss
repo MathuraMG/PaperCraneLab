@@ -7,3 +7,13 @@ $primary-color: #ef4378;
 
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  & a{
+    padding: 0.25rem 0;
+  }
+}

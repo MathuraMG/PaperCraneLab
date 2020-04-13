@@ -18,11 +18,9 @@ class Tutorial extends Component {
 
   }
 
-
-
   render() {
     return (
-      <section className="container" id="events">
+      <section className="container" id="tutorial">
         <section className="sub-container tutorial__container-col tutorial__container-small">
           <h1 className="heading tutorial__heading"> Check out our latest tutorial </h1>
           <p className="tutorial_sub-container content">

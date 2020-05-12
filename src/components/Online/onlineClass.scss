@@ -17,6 +17,8 @@
     line-height: $h1-line-height;
   }
   &__video {
+    width: 100%;
+    max-width: 560px;
     margin: 2rem;
   }
 }

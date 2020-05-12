@@ -2,7 +2,8 @@
 
 .about {
   &__image {
-    width: 70%;
+    width: 100%;
+    max-width: 560px;
     display: flex;
     margin: 0 auto;
     border-radius:$border-radius;

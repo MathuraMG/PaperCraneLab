@@ -6,6 +6,7 @@ import Nav from '../../components/Nav/Nav';
 import Calendar from '../../components/Calendar/Calendar';
 import About from '../../components/About/About';
 import OnlineClasses from '../../components/Online/OnlineClasses';
+import Team from '../../components/Team/Team';
 import Contact from '../../components/Contact/Contact';
 import Tutorial from '../../components/Tutorial/Tutorial';
 
@@ -19,7 +20,7 @@ class Home extends Component {
         <Cover />
         <About />
         <OnlineClasses />
-        <Tutorial />
+        <Team />
         <Contact />
         <footer class="footer">
           <Link to="/tos">Terms of Service</Link>

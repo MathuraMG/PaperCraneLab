@@ -11,7 +11,7 @@ class OnlineClasses extends Component {
         <h1 className="heading online-classes__heading"> Online Class </h1>
         <iframe
           className="online-classes__video"
-          width="560" height="315" src="https://www.youtube.com/embed/-w0m634Ny_4?&rel=0" frameborder="0"  allowfullscreen></iframe>
+          width="560" height="315" src="https://www.youtube.com/embed/-w0m634Ny_4?&rel=0&autoplay=1" frameborder="0"  allowfullscreen></iframe>
         <ul className="online-classes__list">
           {ONLINE_LIST.map((item, key) =>
             <li className="online-classes__list-item">

@@ -39,9 +39,6 @@ class About extends Component {
             </p>
           </section>
         </section>
-        <section className="container" id="about">
-          <Unique />
-        </section>
       </div>
     );
   }

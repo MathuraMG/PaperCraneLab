@@ -36,44 +36,27 @@ class Contact extends Component {
           <Testimonials />
         </section>
         <section className="contact__form-container">
-          <h1 className="heading contact__heading">
-            Subscribe to our newsletter
-          </h1>
-          <form
-            className={`contact__form ${this.state.submitted ? 'contact__form--hidden' : ''}`}
-            name="gform"
-            id="gform"
-            encType="text/plain"
-            action={GOOGLE_FORM}
-            target="hidden_iframe"
-            onSubmit={this.onSubmit}
-          >
-            <input
-              className="contact__input"
-              type="email"
-              placeholder="Email"
-              name="entry.886381642"
-            />
-            <input
-              className="button contact__button"
-              type="submit"
-              value="Submit"
-            />
-          </form>
-          {
-            this.state.submitted && (
-              <p className="contact__thankyou">
-              Thank you for subscribing to our newsletter!
-              </p>
-            )}
-          <iframe
-            title="hidden iframe"
-            name="hidden_iframe"
-            id="hidden_iframe"
-            className="contact__iframe"
-            onLoad={this.onLoad}
-          >
-          </iframe>
+
+        <h1 className="heading contact__heading">
+          Subscribe to our newsletter
+        </h1>
+        <form
+          className="contact__form"
+          action="https://tinyletter.com/papercranelab"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/papercranelab', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <label className="hidden" for="tlemail">Enter your email address</label>
+          <input className="contact__input" type="text"  name="email" id="tlemail" />
+
+          <input type="hidden" value="1" name="embed"/>
+          <input
+            className="button contact__button"
+            type="submit" value="Subscribe" />
+          <p>
+          </p></form>
+
+        
         </section>
         <section className="contact__form-container">
           <h1 className="heading contact__heading">

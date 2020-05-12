@@ -5,12 +5,20 @@ const About3 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/abou
 const About4 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about4.png';
 
 export const ABOUT = `
-Paper Crane Lab curates workshops and classes for those who are passionate about tech-art. We specialise in catering to businesses that want to inculcate agile thinking by inducing an out of the box approach to solution building.
+We are Paper Crane Lab - an education space in Bangalore, India. We run classes and session
+in the area of Science and Technology (STEM subjects) by combining it with creative projects.
 <br>
-We specifically create workshops and programs for organisations to promote innovative designs, improve productivity and fuel passion into their entrepreneurial ideas.
+We work with an enthusiastic team of educators who work in the intersection of science,
+technology and art.
 <br>
-Paper Crane also provides an outlet for children and hobbyists to use technology to create everyday things.
-<span class="highlight">Our vision is to create a holistic learning space that gives people access to affordable tools and collaborative community.</span>`;
+<br>
+Our classes allow for students to learn how we can practically and creatively
+use the tools at our disposal. We encourage out of the box solutions, and creative
+problem solving, all while learning skills like electronics, coding and mechanisms.
+<br>
+<br>
+<span class="highlight">So join us at Paper Crane Lab - where we learn by making!</span>
+`;
 
 export const ABOUT_IMG = [
   {

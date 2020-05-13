@@ -3,6 +3,8 @@ const About1 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/abou
 const About2 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about2.png';
 const About3 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about3.png';
 const About4 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about4.png';
+const About5 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about5.png';
+const About6 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about6.png';
 
 export const ABOUT = `
 We are Paper Crane Lab - an education space in Bangalore, India. We run classes and session
@@ -21,6 +23,14 @@ problem solving, all while learning skills like electronics, coding and mechanis
 `;
 
 export const ABOUT_IMG = [
+  {
+    src: About6,
+    alt: 'kids looking at electronics'
+  },
+  {
+    src: About5,
+    alt: 'kids working on paper circuits'
+  },
   {
     src: About1,
     alt: 'group of people working in kirigami'

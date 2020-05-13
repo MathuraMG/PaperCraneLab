@@ -7,6 +7,7 @@ import { ABOUT, ABOUT_IMG } from '../../constants/aboutContent';
 require('./about.scss');
 
 class About extends Component {
+  isMobile = () => window.innerWidth < 1024;
   renderImage=(src, alt) => (
     <img
       className="about__image"
@@ -26,12 +27,17 @@ class About extends Component {
     return (
       <div>
         <section className="container" id="about">
-          <section className="sub-container">
-            <Slider {...settings}>
-              {ABOUT_IMG.map(img => this.renderImage(img.src, img.alt))}
+        {this.isMobile() && <section className="sub-container">
+          <img src={ABOUT_IMG[0].src} className="about__image" alt={ABOUT_IMG[0].alt} />
+        </section>}
 
-            </Slider>
-          </section>
+        {this.isMobile() || <section className="sub-container">
+          <Slider {...settings}>
+            {ABOUT_IMG.map(img => this.renderImage(img.src, img.alt))}
+
+          </Slider>
+        </section>}
+
           <section className="sub-container">
             <h1 className="heading"> About Us </h1>
             <p className="content">

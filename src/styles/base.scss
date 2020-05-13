@@ -28,6 +28,8 @@ p.content {
   font-size: $p-font-size;
   line-height: $p-line-height;
   font-family: $secondary-font;
+  text-align: left;
+  word-spacing: 2.5px;
 }
 
 span.highlight {
@@ -75,18 +77,21 @@ button.button {
 %button {
   height: 50px;
   cursor: pointer;
-  border: $line-thickness solid $black;
   border-radius: $border-radius;
-  color: $white;
-  background-color: $black;
+
   font-size: $p-font-size*0.8;
   font-family: $primary-font;
   text-transform: uppercase;
   font-weight: 900;
+
+  border: $line-thickness solid $black;
+  color: $black;
+  background-color: transparent;
+
   &:hover {
     border: $line-thickness solid $black;
-    color: $black;
-    background-color: transparent;
+    color: $white;
+    background-color: $black;
   }
 }
 

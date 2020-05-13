@@ -10,10 +10,10 @@ class Cover extends Component {
         <img className="cover__image" src={cover} alt="top view illustration of a work table" />
         <div className="cover__heading-container">
           <h1 className="heading cover__heading">
-           Innovate, Create & Ideate With Technology
+           Innovate, Create & Make !
           </h1>
           <h2 className="heading cover__sub-heading">
-          A Paper Crane Lab Initiative
+          A Paper Crane Lab Adventure
           </h2>
         </div>
       </div>

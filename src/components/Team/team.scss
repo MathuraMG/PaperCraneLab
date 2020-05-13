@@ -14,7 +14,19 @@
     flex-direction: column;
   }
   &__image {
-    width: 100%;
+    width: 80%;
+  }
+  &__bio {
+    font-size: $team-font-size !important;
+    line-height: $team-line-height !important;
+  }
+  &__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: $black;
+    align-items: center;
+
   }
 }
 
@@ -30,6 +42,9 @@
       width: 30%;
       margin: 0 auto;
       list-style: none;
+    }
+    &__image {
+      width: 80%;
     }
   }
 }

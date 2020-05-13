@@ -6,12 +6,16 @@
     max-width: 560px;
     display: flex;
     margin: 0 auto;
-    border-radius:$border-radius;
+    // border-radius:$border-radius;
     margin-bottom: 1rem;
-    border: 2px solid $blue !important;
+    // border: 2px solid $blue !important;
     opacity: 0.95;
   }
 }
+
+// .slick-slide {
+//   width: auto !important;
+// }
 
 @media only screen and (min-width: 1024px) {
   .about {
@@ -19,4 +23,5 @@
       width: 100%;
     }
   }
+
 }

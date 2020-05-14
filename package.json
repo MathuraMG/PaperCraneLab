@@ -58,6 +58,7 @@
     "react-dom": "next",
     "react-hamburger-menu": "^1.1.1",
     "react-infinite-scroll-component": "^4.5.0",
+    "react-instagram-embed": "^1.5.0",
     "react-modal": "^3.8.1",
     "react-redux": "^6.0.0",
     "react-render-html": "^0.6.0",

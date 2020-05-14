@@ -21,6 +21,16 @@ class Team extends Component {
             <p className="content team__bio"> Mathura Govindarajan is a creative technologist and educator from Bangalore. She completed her Masters and Fellowship from NYU's Interactive Telecommunications Program, and her Bachelors in Electronics Engg.from NITK Surathkal. Her work lies in the intersection of art, design and technology. She has been teaching creative technology in various maker spaces and colleges for the past 4 years.</p>
           </li>
 
+          <li className="team__list-item">
+            <a target="_blank" href="https://mathuramg.com/index.html" className="team__link">
+              <h3 className="team__name"> Govindarajan, Biz Consultant </h3>
+              <img className="team__image"
+              src="https://pcl-images.s3.ap-south-1.amazonaws.com/images/team/mvg.jpeg"
+              />
+            </a>
+            <p className="content team__bio"> MV Govindarajan retired as Chief of Operations at L&T Technology Services after 30 years of experience in both product development and Engineering Services. Equipped with a Masters from IITM, and a BE from Madras University, he started of his illustrious career by developing hardware and software for Floppy Disks and Dot Matrix Printers! He now consults with  Paper Crane Lab on Strategy and Business Development.</p>
+          </li>
+
 
           <li className="team__list-item">
             <a target="_blank" href="https://www.linkedin.com/in/dhanvini-gudi-155334ba?originalSubdomain=ca" className="team__link">
@@ -38,7 +48,7 @@ class Team extends Component {
               src="https://pcl-images.s3.ap-south-1.amazonaws.com/images/team/rushali.jpeg"
               />
             </a>
-            <p className="content team__bio"> <span className="highlight">Rushali Paratey </span>is an artist and engineer currently based in LA where she works as a technologist at Alchemy. She worked as Research Resident at New York University's Interactive Telecommunications program where she received her Masters. She loves working on AR, and realted curriculum for PCL!</p>
+            <p className="content team__bio"> <span className="highlight">Rushali Paratey </span>is an artist and engineer currently based in LA where she works as a technologist at Alchemy. She worked as Research Resident at New York University's Interactive Telecommunications program where she received her Masters. She loves working on AR, and related curriculum for PCL!</p>
           </li>
 
         </ul>
@@ -48,11 +58,3 @@ class Team extends Component {
 }
 
 export default Team;
-
-// <li className="team__list-item">
-//   <h3 className="team__name"> MVG, Biz Consultant </h3>
-//   <img className="team__image"
-//   src="https://pcl-images.s3.ap-south-1.amazonaws.com/images/team/mvg.jpeg"
-//   />
-//   <p className="content team__bio"> MV Govindarajan has been working in </p>
-// </li>

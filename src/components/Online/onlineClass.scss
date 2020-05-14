@@ -23,6 +23,19 @@
   }
 }
 
+.im-checkout-btn {
+  border: $line-thickness solid $black !important;
+  color: $black !important;
+  background-color: transparent !important;
+  margin-top: 1rem !important;
+
+  &:hover {
+    border: $line-thickness solid $black !important;
+    color: $white !important;
+    background-color: $black !important;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .online-classes {
     &__list-item {
@@ -36,6 +49,17 @@
 }
 
 .online-class {
+  &__more {
+    border: none;
+    background-color: transparent;
+    color: $blue;
+    text-decoration: underline;
+    font-size: $p-font-size;
+    font-weight: 700;
+    &:hover {
+      color: $black;
+    }
+  }
   &__container {
     // position: relative;
     // border: $line-thickness solid $blue !important;

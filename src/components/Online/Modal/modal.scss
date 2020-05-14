@@ -1,0 +1,76 @@
+@import '../../../styles/variables';
+
+.ReactModal__Overlay--after-open {
+  z-index: 200;
+  background-color: $trans-black !important;
+}
+.ReactModal__Content {
+  padding: 1rem 2rem !important;
+}
+
+.modal {
+  &__close-button {
+    position: absolute;
+    right: 1rem;
+    background: transparent;
+    border: 0;
+    font-size: $h1-font-size;
+    cursor: pointer;
+    & svg {
+      fill: $darkgrey;
+      -webkit-transition: .3s ease-in-out;
+      -moz-transition: .3s ease-in-out;
+      -o-transition: .3s ease-in-out;
+    }
+    &:hover svg {
+      fill: $blue;
+      transform: rotate(90deg);
+    }
+  }
+  &__image {
+    width: 100%;
+    border-radius: $border-radius;
+    margin-top: 1rem;
+  }
+  &__cost {
+    font-size: 24px !important;
+  }
+  &__info {
+    font-size: 24px !important;
+    color: $black !important;
+    font-size: $p-font-size !important;
+  }
+  &__heading {
+    margin: 1.5rem 0 0.5rem 0 !important;
+    font-size: $p-font-size !important;
+  }
+  &__content {
+    font-family: $secondary-font;
+    font-size: $p-font-size*0.9;
+  }
+  &__button {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .modal {
+    &__image {
+      width: 50%;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.im-checkout-btn {
+  border: $line-thickness solid $black !important;
+  color: $black !important;
+  background-color: transparent !important;
+  margin-top: 1rem !important;
+
+  &:hover {
+    border: $line-thickness solid $black !important;
+    color: $white !important;
+    background-color: $black !important;
+  }
+}

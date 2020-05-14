@@ -7,7 +7,7 @@ require('./onlineClass.scss');
 class OnlineClasses extends Component {
   render() {
     return (
-      <section className="container container-col" id="offerings">
+      <section className="container container-col" id="online">
         <h1 className="heading online-classes__heading"> Online Class </h1>
         <iframe
           className="online-classes__video"
@@ -21,6 +21,8 @@ class OnlineClasses extends Component {
                 time={item.Time}
                 image={item.Image}
                 link={item.Link}
+                cost={item.Cost}
+                classDetails={item.Details}
               />
             </li>
           )}

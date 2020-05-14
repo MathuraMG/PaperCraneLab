@@ -16,6 +16,7 @@ class OnlineClasses extends Component {
           {ONLINE_LIST.map((item, key) =>
             <li className="online-classes__list-item">
               <OnlineClass
+                id={key}
                 name={item.Name}
                 date={item.Date}
                 time={item.Time}

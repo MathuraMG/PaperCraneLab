@@ -6,6 +6,7 @@ import PhoneSVG from '../../../assets/phone.svg';
 import MailSVG from '../../../assets/mail.svg';
 
 require('./modal.scss');
+require('../onlineClass.scss');
 
 class CustomModal extends React.Component {
 
@@ -43,6 +44,9 @@ class CustomModal extends React.Component {
              >
                Register Now
              </a>
+             <iframe
+               className="online-classes__video"
+               width="560" height="315" src="https://www.youtube.com/embed/-w0m634Ny_4?&rel=0&autoplay=1" frameborder="0"  allowfullscreen></iframe>
             <p className="content modal__content">
               {renderHTML(this.props.classDetails)}
             </p>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
 
 require('./nav.scss');
 
@@ -54,7 +54,7 @@ class Nav extends Component {
         <div className="nav__left">
           <img
             className="nav__logo"
-            src={logo}
+            src="/logo.png"
             alt="paper crane lab logo"
           />
           <h1 className="heading nav__heading">
@@ -80,7 +80,7 @@ class Nav extends Component {
               className="nav__list"
             >
             {this.renderList('About', '#about')}
-            {this.renderList('Classes', '#offerings')}
+            {this.renderList('Classes', '#online')}
             {this.renderList('Team', '#team')}
             {this.renderList('Contact', '#contact')}
             </ul>
@@ -90,7 +90,7 @@ class Nav extends Component {
               className="nav__list"
             >
               {this.renderList('About', '#about')}
-              {this.renderList('Classes', '#offerings')}
+              {this.renderList('Classes', '#online')}
               {this.renderList('Team', '#team')}
               {this.renderList('Contact', '#contact')}
             </ul>

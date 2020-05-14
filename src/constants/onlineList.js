@@ -1,9 +1,12 @@
+const PE = '/onlineClasses/PaperEngineering.png';
+const CA = '/onlineClasses/CreateArduino.png';
+
 export const ONLINE_LIST = [
   {
     Name: 'Paper Engineering',
     Date: 'June 6 - June 27',
     Time: 'Saturday, 10am - 12noon',
-    Image: 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/onlineClasses/PaperEngineering.png',
+    Image: PE,
     Link: 'https://www.instamojo.com/@papercranelab/l4872f760e2574796b9a4ae419f3e7c55/',
     Cost: 'Rs 2500',
     Details: `
@@ -33,7 +36,7 @@ export const ONLINE_LIST = [
     Name: 'Create with the Arduino',
     Date: 'June 6 - June 27',
     Time: 'Saturday, 2pm - 4pm',
-    Image: 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/onlineClasses/CreateArduino.png',
+    Image: CA,
     Link: 'https://www.instamojo.com/@papercranelab/l47fc35dc117c4b3698d654ace8dc7b3c/',
     Cost: 'Rs 3700',
     Details: `

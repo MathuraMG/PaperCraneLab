@@ -25,8 +25,10 @@ class OnlineClass extends Component {
   }
 
   render() {
+    let id = 'online-class-'+ this.props.key;
+    console.log(id)
     return (
-      <section className="online-class__container" id="offerings">
+      <section className="online-class__container" id="offerings" id={`online-class-${this.props.id}`}>
       <CustomModal
         isModalOpen={this.state.isModalOpen}
         closeModal={this.closeModal}
@@ -41,8 +43,11 @@ class OnlineClass extends Component {
       >
 
       </CustomModal>
-      <h2 className="online-class__heading">
+      <h2 className="online-class__heading" >
         {this.props.name}
+      </h2>
+      <h2 className="online-class__heading-cost" >
+        {this.props.cost}
       </h2>
       <h2 className="online-class__sub-heading">
         {this.props.date}

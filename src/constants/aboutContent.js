@@ -1,10 +1,10 @@
 /* eslint-disable */
-const About1 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about1.png';
-const About2 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about2.png';
-const About3 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about3.png';
-const About4 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about4.png';
-const About5 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about5.png';
-const About6 = 'https://pcl-images.s3.ap-south-1.amazonaws.com/images/about/about6.png';
+const About1 = '/about/about1.png';
+const About2 = '/about/about2.png';
+const About3 = '/about/about3.png';
+const About4 = '/about/about4.png';
+const About5 = '/about/about5.png';
+const About6 = '/about/about6.png';
 
 export const ABOUT = `
 We are Paper Crane Lab - an education space in Bangalore, India. We run classes and session

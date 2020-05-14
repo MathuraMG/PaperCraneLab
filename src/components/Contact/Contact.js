@@ -31,7 +31,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <section className="contact__container">
+      <section className="contact__container" id="contact">
         <section className="contact__testimonials">
           <Testimonials />
         </section>
@@ -56,7 +56,7 @@ class Contact extends Component {
           <p>
           </p></form>
 
-        
+
         </section>
         <section className="contact__form-container">
           <h1 className="heading contact__heading">

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import Cover from '../../components/Cover/Cover';
 import Nav from '../../components/Nav/Nav';
-import Calendar from '../../components/Calendar/Calendar';
 import About from '../../components/About/About';
 import OnlineClasses from '../../components/Online/OnlineClasses';
 import Team from '../../components/Team/Team';
@@ -34,3 +33,15 @@ class Home extends Component {
 
 
 export default Home;
+//
+// <Nav />
+// <Cover />
+// <About />
+// <OnlineClasses />
+// <Team />
+// <Contact />
+// <footer class="footer">
+//   <Link to="/tos">Terms of Service</Link>
+//   <Link to="/refund">Cancellation and Refund</Link>
+//   <Link to="/privacy">Privacy Policy</Link>
+// </footer>

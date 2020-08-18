@@ -19,8 +19,8 @@ class Home extends Component {
         <Cover />
         <About />
         <OnlineClasses />
-        <Team />
         <Contact />
+        <Team />
         <footer class="footer">
           <Link to="/tos">Terms of Service</Link>
           <Link to="/refund">Cancellation and Refund</Link>

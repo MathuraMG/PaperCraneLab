@@ -23,11 +23,21 @@
   }
 }
 
+.im-checkout {
+  margin-bottom: 0px !important;
+}
 .im-checkout-btn {
-  border: $line-thickness solid $black !important;
-  color: $white !important;
-  background-color: $black !important;
-  margin-top: 1rem !important;
+  height: fit-content !important;
+    width: auto !important;
+  font-family: $secondary-font !important; 
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  border: $line-thickness solid $blue !important;
+  color: $blue !important;
+  background-color: $white !important;
+  margin-top: 0 !important;
+  padding: 0.5rem !important;
 
   &:hover {
     border: $line-thickness solid $black !important;
@@ -39,25 +49,41 @@
 @media only screen and (min-width: 1024px) {
   .online-classes {
     &__list-item {
-      width: 45%;
+      width:30%;
     }
     &__list {
       flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 }
 
 .online-class {
+  &__subcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $white;
+    padding: 1rem 0;
+  }
+  &__note {
+    font-size: 12px;
+    line-height: 12px;
+    color: $black;
+    font-style: italic;
+  }
   &__more {
+    text-decoration: none;
+    padding: 0;
     border: none;
-    background-color: transparent;
+    // background-color: $light-blue;
     color: $blue;
-    text-decoration: underline;
     font-size: $p-font-size;
     font-weight: 700;
     &:hover {
       color: $black;
+      cursor: pointer;
     }
   }
   &__heading-cost {
@@ -65,19 +91,22 @@
     font-size: 16px;
     line-height: $p-line-height;
     margin: 0;
+    text-decoration: none !important;
+    color: $black;
+    &:hover {
+      text-decoration: none !important;
+      color: $black;
+    };
   }
   &__container {
-    // position: relative;
-    // border: $line-thickness solid $blue !important;
-    // border-radius: $border-radius;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    // height: 240px;
-    margin: 1rem auto;
-    padding-top: 70px;
+    // padding-top: 70px;
     overflow: hidden;
+    margin: 1rem auto;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.06);
   }
   &__image {
     // position: absolute;
@@ -85,16 +114,15 @@
     margin: 0 auto;
     // opacity: 0.6;
     z-index: 0;
-    padding: 1rem 0;
+    padding: 0;
   }
   &__heading {
     margin: 0;
     font-size: $p-font-size;
     line-height: $p-line-height;
-    text-transform: uppercase;
     color: $black;
     text-align: center;
-    font-weight: 900;
+    font-weight: 700;
     padding: 1rem 0;
   }
   &__sub-heading {

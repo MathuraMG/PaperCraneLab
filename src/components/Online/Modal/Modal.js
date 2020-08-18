@@ -31,10 +31,14 @@ class CustomModal extends React.Component {
               {this.props.date} | {this.props.time}
              </h2>
             <h2 className="sub-heading modal__cost">
-              {this.props.cost}
+            &#8377; {this.props.cost}
              </h2>
+             <p className="online-class__note">
+               Inclusive of material and shipping
+             </p>
              <img className="modal__image" src={this.props.image}/>
              <a
+               id={`modal-register-${this.props.id}`}
                className="button"
                target="_blank"
                href={this.props.link}
@@ -44,9 +48,6 @@ class CustomModal extends React.Component {
              >
                Register Now
              </a>
-             <iframe
-               className="online-classes__video"
-               width="560" height="315" src="https://www.youtube.com/embed/-w0m634Ny_4?&rel=0&autoplay=1" frameborder="0"  allowfullscreen></iframe>
             <p className="content modal__content">
               {renderHTML(this.props.classDetails)}
             </p>

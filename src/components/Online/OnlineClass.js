@@ -40,39 +40,66 @@ class OnlineClass extends Component {
         link={this.props.link}
         cost={this.props.cost}
         classDetails={this.props.classDetails}
+        id={this.props.id}
       >
 
       </CustomModal>
-      <h2 className="online-class__heading" >
-        {this.props.name}
-      </h2>
-      <h2 className="online-class__heading-cost" >
-        {this.props.cost}
-      </h2>
-      <h2 className="online-class__sub-heading">
-        {this.props.date}
-      </h2>
-      <h2 className="online-class__sub-heading">
-        {this.props.time}
-      </h2>
 
-      <img className="online-class__image" src={this.props.image} />
+
+      <br/>
+      {this.props.spayee ||
       <button
         className="online-class__more"
         onClick={this.openModal}
       >
-        Learn More
+        <img className="online-class__image" src={this.props.image} />
+          <h2 className="online-class__heading" >
+            {this.props.name} | Saturdays
+          </h2>
+          <div class="online-class__subcontainer">
+            <h2 className="online-class__heading-cost" >
+            &#8377; {this.props.cost}
+            </h2>
+            <a
+              className="button"
+              target="_blank"
+              href={this.props.link}
+              rel="im-checkout"
+              onClick={this.openModal}
+              data-text="Register Now"
+            >
+              Register Now
+            </a>
+          </div>
       </button>
+      }
+
+{this.props.spayee &&
       <a
-        className="button"
+        className="online-class__more"
         target="_blank"
         href={this.props.link}
-        rel="im-checkout"
-        onClick={this.openModal}
-        data-text="Register Now"
       >
-        Register Now
+        <img className="online-class__image" src={this.props.image} />
+          <h2 className="online-class__heading" >
+            {this.props.name}
+          </h2>
+          <div class="online-class__subcontainer">
+            <h2 className="online-class__heading-cost" >
+            &#8377; {this.props.cost}
+            </h2>
+            <a
+              className="button im-checkout-btn"
+              target="_blank"
+              href={this.props.link}
+            >
+              Register Now
+            </a>
+          </div>
       </a>
+      }
+      
+      
 
       </section>
     );

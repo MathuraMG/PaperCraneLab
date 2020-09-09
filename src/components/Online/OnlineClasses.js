@@ -8,8 +8,8 @@ class OnlineClasses extends Component {
   render() {
     return (
       <section className="container container-col" id="online">
-        <h1 className="heading online-classes__heading"> Class Offerings </h1>
-      
+        <h1 className="heading online-classes__heading"> Offerings </h1>
+
         <ul className="online-classes__list">
           {ONLINE_LIST.map((item, key) =>
             <li className="online-classes__list-item">
@@ -23,6 +23,9 @@ class OnlineClasses extends Component {
                 cost={item.Cost}
                 classDetails={item.Details}
                 spayee={item.spayee}
+                tag={item.tag}
+                type={item.type}
+                buttonText={item.ButtonText}
               />
             </li>
           )}

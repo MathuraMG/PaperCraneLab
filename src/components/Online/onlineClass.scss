@@ -10,6 +10,7 @@
   &__list-item {
     list-style: none;
     width: 100%;
+    margin-top: 0.5rem;
   }
   &__heading {
     text-align: center;
@@ -29,7 +30,7 @@
 .im-checkout-btn {
   height: fit-content !important;
     width: auto !important;
-  font-family: $secondary-font !important; 
+  font-family: $secondary-font !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   text-transform: capitalize !important;
@@ -60,10 +61,24 @@
 }
 
 .online-class {
+  &__tag {
+    font-size: 12px;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: fit-content;
+    border-radius: $border-radius/2 ;
+    &--LC {
+      background: $yellow;
+    }
+    &--IL {
+      background: $pink;
+    }
+
+  }
   &__subcontainer {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     background-color: $white;
     padding: 1rem 0;
   }
@@ -105,7 +120,7 @@
     width: 100%;
     // padding-top: 70px;
     overflow: hidden;
-    margin: 1rem auto;
+    margin-bottom: 1rem;
     box-shadow: 0 3px 12px 0 rgba(0,0,0,0.06);
   }
   &__image {

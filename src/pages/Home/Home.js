@@ -21,7 +21,7 @@ class Home extends Component {
         <OnlineClasses />
         <Contact />
         <Team />
-        <footer class="footer">
+        <footer className="footer">
           <Link to="/tos">Terms of Service</Link>
           <Link to="/refund">Cancellation and Refund</Link>
           <Link to="/privacy">Privacy Policy</Link>

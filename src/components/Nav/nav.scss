@@ -36,6 +36,7 @@
     margin: 0 1rem!important;
   }
   &__list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -44,11 +45,13 @@
     margin: 0;
     padding: 0;
     background: $black;
+    padding-bottom: 1rem;
   }
   &__item {
     list-style: none;
     padding: 0.5rem 0.5rem;
     background: $black;
+    font-size: 36px;
   }
   &__item-link {
     color: $white;
@@ -56,6 +59,8 @@
     text-transform: uppercase;
     font-size: $p-font-size*0.8;
     font-weight: 800;
+    font-size: 24px;
+    padding: 0 1rem;
     cursor: pointer;
     &:hover {
       color: $blue;
@@ -69,6 +74,9 @@
 
 @media only screen and (min-width: 1024px) {
   .nav {
+    &__item-link {
+      font-size: $p-font-size*0.8;
+    }
     &__small-menu {
       display: none;
     }
@@ -82,6 +90,10 @@
       display: flex;
       position: inherit;
       flex-direction: row;
+      padding-bottom: 0;
+    }
+    &__item {
+        font-size: 20px;
     }
   }
 }

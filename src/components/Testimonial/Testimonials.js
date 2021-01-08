@@ -2,7 +2,7 @@ import Slider from 'react-slick';
 import React, { Component } from 'react';
 import { TESTIMONIALS } from '../../constants/testimonials';
 
-require('./contact.scss');
+require('./testimonials.scss');
 
 class Testimonials extends Component {
   renderTestimonial=(content, name) => (
@@ -25,9 +25,11 @@ class Testimonials extends Component {
       slidesToScroll: 1
     };
     return (
-      <Slider {...settings}>
-        {TESTIMONIALS.map(testimonial => this.renderTestimonial(testimonial.content, testimonial.name))}
-      </Slider>
+      <section className="testimonials__container">
+        <Slider {...settings}>
+          {TESTIMONIALS.map(testimonial => this.renderTestimonial(testimonial.content, testimonial.name))}
+        </Slider>
+      </section>
     );
   }
 }

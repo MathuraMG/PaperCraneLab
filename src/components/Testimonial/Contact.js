@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Testimonials from './Testimonials';
 import PhoneSVG from '../../assets/phone.svg';
 import MailSVG from '../../assets/mail.svg';
 import InstaSVG from '../../assets/insta.svg';
@@ -31,6 +32,9 @@ class Contact extends Component {
   render() {
     return (
       <section className="contact__container" id="contact">
+        <section className="contact__testimonials">
+          <Testimonials />
+        </section>
         <section className="contact__form-container">
 
         <h1 className="heading contact__heading">

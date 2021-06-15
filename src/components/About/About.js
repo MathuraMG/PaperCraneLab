@@ -7,7 +7,6 @@ import { ABOUT, ABOUT_IMG } from '../../constants/aboutContent';
 require('./about.scss');
 
 class About extends Component {
-  isMobile = () => window.innerWidth < 1024;
   renderImage=(src, alt) => (
     <img
       className="about__image"

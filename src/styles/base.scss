@@ -50,6 +50,11 @@ section.sub-container {
   width: 100%;
 }
 
+a.highlight {
+  color: $blue;
+  font-weight: 800;
+}
+
 a.button {
   @extend %button;
   text-decoration: none;

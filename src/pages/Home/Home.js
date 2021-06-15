@@ -11,6 +11,7 @@ import OnlineClasses from '../../components/Online/OnlineClasses';
 import Team from '../../components/Team/Team';
 import Testimonial from '../../components/Testimonial/Testimonials';
 import Tutorial from '../../components/Tutorial/Tutorial';
+import Work from '../../components/Work/Work';
 import Youtube from '../../components/Youtube/Youtube';
 
 import ScrollUpSVG from '../../assets/scroll_up.svg';
@@ -26,14 +27,10 @@ class Home extends Component {
         <About />
         <Events />
         <Youtube />
-        <Testimonial />
+        <Work />
         <Team />
         <Contact />
-        <footer className="footer">
-          <Link to="/tos">Terms of Service</Link>
-          <Link to="/refund">Cancellation and Refund</Link>
-          <Link to="/privacy">Privacy Policy</Link>
-        </footer>
+
         <ScrollToTop showUnder={160}>
           <ScrollUpSVG alt="email" />
         </ScrollToTop>
@@ -44,15 +41,9 @@ class Home extends Component {
 
 
 export default Home;
-//
-// <Nav />
-// <Cover />
-// <About />
-// <OnlineClasses />
-// <Team />
-// <Contact />
-// <footer class="footer">
-//   <Link to="/tos">Terms of Service</Link>
-//   <Link to="/refund">Cancellation and Refund</Link>
-//   <Link to="/privacy">Privacy Policy</Link>
+
+// <footer className="footer">
+//   <Link className="footer__item" to="/tos">Terms of Service</Link>
+//   <Link className="footer__item" to="/refund">Cancellation and Refund</Link>
+//   <Link className="footer__item" to="/privacy">Privacy Policy</Link>
 // </footer>

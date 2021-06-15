@@ -17,7 +17,7 @@ class Youtube extends Component {
     };
 
     return (
-      <section className="container container-col" id="team">
+      <section className="container container-col" id="youtube">
         <h1 className="heading team__heading"> Make with PCL! </h1>
 
         <p className="content">

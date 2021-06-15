@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/base';
+.work {
+  &__images {
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+    padding: 0;
+  }
+  &__image {
+    padding-right: 2rem;
+    width: 400px;
+    max-width: 560px;
+    display: flex;
+    margin: 0 auto;
+    // border-radius:$border-radius;
+    margin-bottom: 1rem;
+    // border: 2px solid $blue !important;
+    opacity: 0.95;
+  }
+}

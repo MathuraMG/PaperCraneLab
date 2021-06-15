@@ -27,7 +27,7 @@ class Team extends Component {
 
           <li className="team__list-item">
             <a target="_blank" href="https://mathuramg.com/index.html" className="team__link">
-              <h3 className="team__name"> Govindarajan, Biz Consultant </h3>
+              <h3 className="team__name"> Govindarajan, Ops Consultant </h3>
               <img className="team__image"
               src={MVG}
               />

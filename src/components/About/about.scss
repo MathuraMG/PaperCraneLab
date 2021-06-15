@@ -1,8 +1,15 @@
 @import '../../styles/variables';
 
 .about {
+  &__images {
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+    padding: 0;
+  }
   &__image {
-    width: 100%;
+    padding-right: 2rem;
+    width: 400px;
     max-width: 560px;
     display: flex;
     margin: 0 auto;

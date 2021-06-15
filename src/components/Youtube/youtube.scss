@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/base';
+
+.youtube {
+  &__videos {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+    padding: 0;
+  }
+  &__video {
+    padding-right: 2rem;
+  }
+  &__link {
+    color: $blue;
+    font-weight: 800;
+  }
+}

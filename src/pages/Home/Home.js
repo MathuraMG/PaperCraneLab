@@ -11,6 +11,8 @@ import OnlineClasses from '../../components/Online/OnlineClasses';
 import Team from '../../components/Team/Team';
 import Testimonial from '../../components/Testimonial/Testimonials';
 import Tutorial from '../../components/Tutorial/Tutorial';
+import Youtube from '../../components/Youtube/Youtube';
+
 import ScrollUpSVG from '../../assets/scroll_up.svg';
 
 require('./home.scss');
@@ -21,10 +23,10 @@ class Home extends Component {
       <div>
         <Nav />
         <Cover />
-        <Events/>
-        <OnlineClasses />
-        <Testimonial />
         <About />
+        <Events />
+        <Youtube />
+        <Testimonial />
         <Team />
         <Contact />
         <footer className="footer">

@@ -7,19 +7,13 @@ const About5 = '/about/about5.png';
 const About6 = '/about/about6.png';
 
 export const ABOUT = `
-We are Paper Crane Lab - an education space in Bangalore, India. We run classes and session
-in the area of Science and Technology (STEM subjects) by combining it with creative projects.
-<br>
-We work with an enthusiastic team of educators who work in the intersection of science,
-technology and art.
-<br>
-<br>
-Our classes allow for students to learn how we can practically and creatively
-use the tools at our disposal. We encourage out of the box solutions, and creative
-problem solving, all while learning skills like electronics, coding and mechanisms.
-<br>
-<br>
-<span class="highlight">So join us at Paper Crane Lab - where we learn by making!</span>
+Paper Crane Lab is a nonprofit organisation based in Bangalore, India focussing on education.
+We work towards increasing access to STEM (Science, Technology, Engineering, Mathematics) education
+for all ages by combining STEM concepts with art and creative projects.
+<br><br>
+Our vision is to make STEM education accessible, affordable, and hands-on!
+<br><br>
+<a class="highlight" href="bit.ly/pcl-about-us">You can read more about us here!</a>
 `;
 
 export const ABOUT_IMG = [

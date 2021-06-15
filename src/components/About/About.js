@@ -27,20 +27,18 @@ class About extends Component {
     return (
       <div>
         <section className="container" id="about">
-        {this.isMobile() &&
-          <section className="sub-container">
-            <img src={ABOUT_IMG[0].src} className="about__image" alt={ABOUT_IMG[0].alt} />
-          </section>
-        }
 
-        {this.isMobile() ||
-          <section className="sub-container">
-            <Slider {...settings}>
-              {ABOUT_IMG.map(img => this.renderImage(img.src, img.alt))}
+        <section className="sub-container">
+          <ul className="about__images">
+            {ABOUT_IMG.map(img => {
+                return <li>
+                  {this.renderImage(img.src, img.alt)}
+                  </li>
+              }
+            )}
 
-            </Slider>
-          </section>
-        }
+          </ul>
+        </section>
 
         <section className="sub-container">
           <h1 className="heading"> About Us </h1>

@@ -1,7 +1,7 @@
 /* eslint-disable */
-const Work1 = '/about/about1.png';
-const Work2 = '/about/about2.png';
-const Work3 = '/about/about3.png';
+const Work1 = '/work/work1.png';
+const Work2 = '/work/work2.png';
+const Work3 = '/work/work3.png';
 
 
 export const WORK_LIST = [
@@ -15,14 +15,14 @@ export const WORK_LIST = [
 export const WORK_IMG = [
   {
     src: Work1,
-    alt: 'group of people working in kirigami'
+    alt: 'Paper Crane Lab kits handed over by Commissioner of Social Defence to Govt. Home in Chennai'
   },
   {
     src: Work2,
-    alt: 'sculpture made out of led of man playing bass'
+    alt: 'Electronics kits being used by 30 girls in Govt. school in Karnataka'
   },
   {
     src: Work3,
-    alt: 'kids working on an electronics project'
+    alt: 'Project made by one of the students using the electronics kit'
   }
 ];

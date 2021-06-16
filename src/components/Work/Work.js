@@ -31,7 +31,7 @@ class Work extends Component {
               return(
                 <li>
                   {this.renderImage(img.src, img.alt)}
-                  <p className="content work__image-text">{img.text}</p>
+                  <p className="content work__image-text">{img.alt}</p>
                 </li>
               )
               }

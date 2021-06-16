@@ -13,7 +13,7 @@ for all ages by combining STEM concepts with art and creative projects.
 <br><br>
 Our vision is to make STEM education accessible, affordable, and hands-on!
 <br><br>
-<a class="highlight" href="bit.ly/pcl-about-us">You can read more about us here!</a>
+<a class="highlight" href="http://bit.ly/pcl-about-us">You can read more about us here!</a>
 `;
 
 export const ABOUT_IMG = [

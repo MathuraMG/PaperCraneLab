@@ -9,7 +9,7 @@
   }
   &__image {
     padding-right: 2rem;
-    width: 400px;
+    height: 300px;
     max-width: 560px;
     display: flex;
     margin: 0 auto;
@@ -17,5 +17,10 @@
     margin-bottom: 1rem;
     // border: 2px solid $blue !important;
     opacity: 0.95;
+  }
+  &__image-text {
+    padding-right: 2rem;
+    font-size: 12px !important;
+    font-style: italic;
   }
 }

@@ -32,29 +32,6 @@ class Contact extends Component {
     return (
       <section className="container contact__container" id="contact">
         <section className="contact__form-container">
-
-        <h1 className="heading contact__heading">
-          Subscribe to our newsletter
-        </h1>
-        <form
-          className="contact__form"
-          action="https://tinyletter.com/papercranelab"
-          method="post"
-          target="popupwindow"
-          onsubmit="window.open('https://tinyletter.com/papercranelab', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-          <label className="hidden" for="tlemail">Enter your email address</label>
-          <input className="contact__input" type="text"  name="email" id="tlemail" />
-
-          <input type="hidden" value="1" name="embed"/>
-          <input
-            className="button contact__button"
-            type="submit" value="Subscribe" />
-          <p>
-          </p></form>
-
-
-        </section>
-        <section className="contact__form-container">
           <h1 className="heading contact__heading">
             Get in Touch!
           </h1>
@@ -66,10 +43,10 @@ class Contact extends Component {
                     <PhoneSVG alt="phone no" />
                   </div>
                   <a
-                    href="tel:+919513222681"
+                    href="tel:+919845620061"
                     className="contact__detail"
                   >
-                    +91 95132 22681
+                    +91 98456 20061
                   </a>
                 </li>
                 <li className="contact__item">

@@ -1,5 +1,9 @@
 @import '../../styles/variables';
 .team {
+  &__role {
+      font-size: 12px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;

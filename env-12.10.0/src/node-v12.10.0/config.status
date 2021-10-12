@@ -1,0 +1,3 @@
+#!/bin/sh
+set -x
+exec ./configure --prefix=/Users/harimohanraj/Documents/Mathura/PaperCraneLab/env-12.10.0

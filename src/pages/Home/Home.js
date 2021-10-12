@@ -25,14 +25,13 @@ class Home extends Component {
         <Nav />
         <Cover />
         <About />
-        <Events />
         <Youtube />
         <Work />
         <Team />
         <Contact />
 
         <ScrollToTop showUnder={160}>
-          <ScrollUpSVG alt="email" />
+          <ScrollUpSVG alt="scroll to top" />
         </ScrollToTop>
       </div>
     );
@@ -41,9 +40,3 @@ class Home extends Component {
 
 
 export default Home;
-
-// <footer className="footer">
-//   <Link className="footer__item" to="/tos">Terms of Service</Link>
-//   <Link className="footer__item" to="/refund">Cancellation and Refund</Link>
-//   <Link className="footer__item" to="/privacy">Privacy Policy</Link>
-// </footer>

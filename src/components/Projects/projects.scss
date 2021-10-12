@@ -1,0 +1,99 @@
+@import '../../styles/variables';
+@import '../../styles/base';
+
+h2,h3,p {
+    margin: 0;
+}
+
+.events {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  &__sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    &-left {
+      align-items: flex-start;
+    }
+  }
+
+}
+
+.event {
+  &__container {
+    width: 100%;
+    background: $white;
+    border: 2px solid $blue;
+    border-radius: $border-radius;
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__link {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+  }
+  &__left {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $blue;
+    color: $white;
+    justify-content: center;
+    padding: 5px;
+  }
+  &__date {
+    text-decoration: none;
+    font-size: 32px;
+  }
+
+  &__right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0 10px;
+    color: $black;
+    padding: 5px;
+  }
+  &__name {
+    font-size: $h1-font-size;
+  }
+  &__details {
+    font-size: 12px;
+    margin: 7px 0;
+  }
+  &__price {
+    font-size: 12px;
+    font-weight: 700;
+    color: $blue;
+  }
+  &__rsvp {
+    width: 80%;
+    margin: 0 10%;
+  }
+  &__heading {
+    font-size: $h1-font-size;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .events {
+    &__container {
+      display: flex;
+      flex-direction: column !important;
+    }
+  }
+}

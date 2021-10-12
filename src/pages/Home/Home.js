@@ -25,8 +25,8 @@ class Home extends Component {
         <Nav />
         <Cover />
         <About />
-        <Youtube />
         <Work />
+        <Youtube />
         <Team />
         <Contact />
 
